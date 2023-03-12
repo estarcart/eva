@@ -1,133 +1,91 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+  font-weight: 400;
 }
 
-body {
-  font-size: 16px;
+body { /*cuerpo de la pagina*/
+  font-size: 1.5vh;
   line-height: 1.5;
   color: #333;
   background-color: #9E71FF;
-}
-
-.texto {
-  font-size: 16px;
+  height: 100vh;
+  margin: 0;
   color: white;
-  letter-spacing: 0.15em;
+  
+}
+.home{ /*home de inicio.html*/
+  display: flex;
+  justify-content: center;
+}
+.homeop{ /*home de Inicio_opciones_usuario.html*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.txtcliente {
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.15em;
-  margin-top: 5vh;
-  margin-left: 80vh;
-  height: 0vh;
+.inicioOp{ /*div de los logos de inicio.html*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
 }
 
-.txtempleado {
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.15em;
-  margin-top: 10vh;
-  margin-left: 115vh;
-  height: 0vh;
+.logoinicio{ /*logo de EVA*/
+  width: 60vh;
+  transition: transform 0.5s ease;
 }
 
-#logoevainicio {
-  /*Logo de EVA para el inicio*/
-  display: block;
-  margin-top: 20vh;
-  margin-left: 20vh;
-  margin-right: 1vh;
-  max-width: 100vh;
-  height: 50vh;
-
+.logoinicio:hover{  /*animación que al ponerle el mouse encima se agranda el logo de EVA*/
+  transform: scale(1.1);
+}
+.logoinicio1{ /*logo de EVA sin animación*/
+  width: 60vh;
 }
 
-#logobabiesinicio {
-  /*Logo de EVA bebe para el inicio*/
-  display: block;
-  margin-top: -47.6vh;
-  margin-left: 110vh;
-  max-width: 100vh;
-  height: 50vh;
-
+.textoinicio{
+  display: flex;
+  margin: 2vh;
 }
 
-#logoevausuarios{
-  /*Logo de EVA para seleccion de usuario*/
-  display: block;
-  margin-top: 10vh;
-  margin-left: 71vh;
-  margin-right: 1vh;
-  max-width: 100vh;
-  height: 50vh;
-
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 80vh;
-  right: 1vh;
-}
-
-
-div.form-container {
-  border: 1vh solid #ddd;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 20px;
-  max-width: 69.9vh;
-  margin-left: 160vh;
-  margin-right: 10vh;
-  margin-top: -40vh;
-}
-fieldset {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 2.7vh;
-}
-legend {
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 1.3vh;
-}
-label {
-  display: inline-block;
-  width: 13.9vh;
-  margin-right: 1.3vh;
-  text-align: right;
-  font-weight: bold;
-}
-input[type="text"], input[type="email"], textarea {
-  width: 41.9vh;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: -5vh;
-  max-width: 30vh;
-  background-color: #D9D9D9;
-
-}
-textarea {
-  height: 10vh;
-}
-input[type="submit"] {
-  padding: 5px 20px;
-  background-color: black;
+.textoinicio a{
+  display: flex;
+  margin-inline: 10vh;
+  text-decoration: none;
   color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 10px;
-  font-weight: bold;
-  margin-left: 10vh;
-  margin-top: 5vh;
+  transition: color 0.5s ease;
 }
-input[type="submit"]:hover {
-  background-color: black;
+
+.textoinicio a:hover{
+  display: flex;
+  margin-inline: 10vh;
+  text-decoration: none;
+  color: #FFD600;
 }
+
+.redes{
+  display: flex;
+  
+}
+/*logos de redes sociales*/
+.wp{ 
+width: 4vh;
+height: auto;
+}
+.fb{
+  width: 4vh;
+  height: auto;
+}
+.ig{
+  width: 4vh;
+  height: auto;
+}
+
+
+
