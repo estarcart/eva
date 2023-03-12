@@ -20,18 +20,20 @@ body {
 
 .txtcliente {
   font-size: 16px;
-  color: white;
+  color: rgb(255, 255, 255);
   letter-spacing: 0.15em;
-  margin-top: 10vh;
-  margin-left: 82vh;
+  margin-top: 5vh;
+  margin-left: 80vh;
+  height: 0vh;
 }
 
 .txtempleado {
   font-size: 16px;
-  color: white;
+  color: rgb(255, 255, 255);
   letter-spacing: 0.15em;
-  margin-top:-3.5vh;
+  margin-top: 10vh;
   margin-left: 115vh;
+  height: 0vh;
 }
 
 #logoevainicio {
