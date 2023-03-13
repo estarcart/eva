@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    font-weight: 400;
+  }
+  
+  body { /*cuerpo de la pagina*/
+    font-size: 1.5vh;
+    line-height: 1.5;
+    color: #333;
+    background-color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    background-image: url("/imagenes/fondoBebe.png");
+    background-position: center top; /* Posición centrada en la parte superior */
+    background-repeat: no-repeat; /* No se repite la imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    
+  }
+
+  .homeop{ /*home de Iniciobebe.html*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .logoinicio1{ /*logo de EVA sin animación*/
+    width: 60vh;
+  }
+  
+  .textoinicio{
+    display: flex;
+    margin: 2vh;
+  }
+  
+  .textoinicio a{
+    display: flex;
+    margin-inline: 10vh;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s ease;
+  }
+  
+  .textoinicio a:hover{
+    display: flex;
+    margin-inline: 10vh;
+    text-decoration: none;
+    color: #FFD600;
+  }
+  
+  .redes{
+    display: flex;
+  }
+  /*logos de redes sociales*/
+  .wp{ 
+  width: 4vh;
+  height: auto;
+  }
+  .fb{
+    width: 4vh;
+    height: auto;
+  }
+  .ig{
+    width: 4vh;
+    height: auto;
+  }
+  

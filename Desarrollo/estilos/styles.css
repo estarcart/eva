@@ -19,7 +19,7 @@ body { /*cuerpo de la pagina*/
   display: flex;
   justify-content: center;
 }
-.homeop{ /*home de Inicio_opciones_usuario.html*/
+.homeop{ /*home de Inicioeva.html*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,17 @@ body { /*cuerpo de la pagina*/
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
+}
+
+.homecitas{ /*home de agendarcita.html*/
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  padding: 5vh;
 }
 
 .inicioOp{ /*div de los logos de inicio.html*/
@@ -37,6 +48,7 @@ body { /*cuerpo de la pagina*/
   text-align: center;
 }
 
+
 .logoinicio{ /*logo de EVA*/
   width: 60vh;
   transition: transform 0.5s ease;
@@ -46,6 +58,10 @@ body { /*cuerpo de la pagina*/
   transform: scale(1.1);
 }
 .logoinicio1{ /*logo de EVA sin animación*/
+  width: 60vh;
+}
+
+.logocitas{ /*logo de EVA sin animación*/
   width: 60vh;
 }
 
