@@ -32,12 +32,56 @@ body { /*cuerpo de la pagina*/
 .homecitas{ /*home de agendarcita.html*/
   display: flex;
   justify-content: left;
-  align-items: left;
-  align-content: left;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
-  padding: 5vh;
+}
+
+.barra{
+  display: flex;
+  border-left: 0.6vh solid #FFD600;
+  height: 90vh;
+  border-top-left-radius: 0.2vh;
+  border-bottom-left-radius: 0.2vh;
+  border-top-right-radius: 0.2vh;
+  border-bottom-right-radius: 0.2vh;
+  width: 1vh;
+  margin-left: 60vh;
+  margin-top: -40vh;
+ 
+
+}
+.logobarra{ /*logo de EVA para la barra lateral*/
+  width: 45vh;
+}
+
+.textobarra{
+width: 25vh;
+display: flex;
+margin-inline: 20vh;
+flex-direction: column;
+align-items: center;
+margin-top: -1vh;
+
+}
+
+.textobarra a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.textobarra a:hover{
+  display: flex;
+  text-decoration: none;
+  color: #FFD600;
+}
+
+
+.negrilla{
+font-weight: bold
+
 }
 
 .inicioOp{ /*div de los logos de inicio.html*/
@@ -61,9 +105,6 @@ body { /*cuerpo de la pagina*/
   width: 60vh;
 }
 
-.logocitas{ /*logo de EVA sin animación*/
-  width: 60vh;
-}
 
 .textoinicio{
   display: flex;

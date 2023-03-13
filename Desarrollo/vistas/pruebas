@@ -82,3 +82,51 @@ div.form-container {
     background-color: black;
   }
 
+
+Tabla css:
+table {
+  border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+  width: 100%; /* ancho de la tabla */
+}
+
+th, td {
+  padding: 8px; /* espaciado interno de las celdas */
+  text-align: left; /* alinear texto a la izquierda */
+  border-bottom: 1px solid #ddd; /* borde inferior de las celdas */
+}
+
+th {
+  background-color: #f2f2f2; /* color de fondo del encabezado */
+  color: #333; /* color del texto del encabezado */
+}
+
+tabla html:
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>País</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>María</td>
+      <td>25</td>
+      <td>España</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>35</td>
+      <td>Estados Unidos</td>
+    </tr>
+    <tr>
+      <td>Andrés</td>
+      <td>42</td>
+      <td>México</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
