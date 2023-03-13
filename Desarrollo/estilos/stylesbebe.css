@@ -13,7 +13,7 @@
     height: 100vh;
     margin: 0;
     color: rgb(0, 0, 0);
-    background-image: url("/imagenes/fondoBebe.png");
+    background-image: url("../imagenes/fondoBebe.png");
     background-position: center top; /* Posición centrada en la parte superior */
     background-repeat: no-repeat; /* No se repite la imagen */
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
