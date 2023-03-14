@@ -145,4 +145,29 @@ height: auto;
 }
 
 
+.table {
+  overflow: auto;
+  max-height: 80vh;
+  display: flex;
+  position: relative;
+  left: 10vh;
+  top: 10vh;
+  border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+  width: 30vh; /* ancho de la tabla */
+}
+
+th, td {
+  padding: 8px; /* espaciado interno de las celdas */
+  text-align: left; /* alinear texto a la izquierda */
+  border-bottom: 1px solid #ddd; /* borde inferior de las celdas */
+}
+
+th {
+  background-color: #f2f2f2; /* color de fondo del encabezado */
+  color: #333; /* color del texto del encabezado */
+  position: sticky;
+  top: 0;
+  
+}
+
 
