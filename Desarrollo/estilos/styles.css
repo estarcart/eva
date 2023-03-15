@@ -21,6 +21,7 @@ body {
     float: left;
   }
 
+<<<<<<< Updated upstream
 #logobabies {
     display: block;
     margin-top: 20px;
@@ -29,3 +30,16 @@ body {
     height: 400px;
     float: right;
   }
+=======
+.texto_inicio_empleado h1{ /*Texto inicio sesion empleado*/
+
+  text-align: center;
+
+    
+}
+
+
+
+
+
+>>>>>>> Stashed changes
