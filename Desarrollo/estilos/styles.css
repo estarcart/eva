@@ -192,10 +192,125 @@ button {
   
 }
 
+.texto_inicio_empleado{ /*inicio empleado*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+}
+
+.boton_inicio_empleado{ /*boton inicio de empleado*/
+  border-radius: 1vh;
+  padding: 0.5vh;
+  font-size: 2.5vh;
+  border: none;
+  text-align: center;
+}
 
 
+.btn_ventas_historial{
+  font-weight: bold;
+  background-color: #D458FF;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.9vh 2.2vh;
+  text-decoration: none;
+  font-size: 3vh;
+  margin: 0.01vh 0.1vh;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8vh;
+  width: 20vh;
+  height: 6vh;
+}
 
 
+.btn_ventas_registrar{
+  font-weight: bold;
+  background-color: #FFAAFC;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.9vh 2.2vh;
+  text-decoration: none;
+  font-size: 3vh;
+  margin: 0.01vh 0.1vh;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8vh;
+  width: 29%;
+  height: 6vh;
+  display: flex;
+
+}
+
+.ventas{
+  position: relative;
+  right: 25vh;
+
+  
+  
+}
+
+.ventas h1{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 13.5vh;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vh;
+  line-height: 39px;
+
+  color: #FFFFFF;
+}
+
+.ventas input{
+  margin:auto;
+  position: relative;
+  top: -5vh;
+  width: 90%;
+  height: 6vh;
+  border-radius: 1vh;
+  border: none;
+  
+}
 
 
+.label_ventas{
+  background-color: #b795ff;
+  width: 85%;
+  height: 3vh;
+  border-radius: 1vh;
+  font-size: 3vh;
+  color: black;
+  position: relative;
+  top: -4vh;
+  padding: 3vh;
+  position: relative;
+  font-family: inherit;
+  
+  
+}
 
+.label_ventas label{
+  position: relative;
+  top: -1vh;
+  font-weight: lighter;
+}
+
+
+.btn_ventas{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  width: 50%;
+
+}
