@@ -146,6 +146,7 @@ height: auto;
 
 
 .table {
+  font-size: 1.6vh;
   overflow: auto;
   max-height: 80vh;
   display: flex;
@@ -153,21 +154,48 @@ height: auto;
   left: 10vh;
   top: 10vh;
   border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
-  width: 30vh; /* ancho de la tabla */
+  width: 100vh; /* ancho de la tabla */
 }
 
-th, td {
-  padding: 8px; /* espaciado interno de las celdas */
-  text-align: left; /* alinear texto a la izquierda */
-  border-bottom: 1px solid #ddd; /* borde inferior de las celdas */
+td {
+  border-radius: 3vh;
+  width: 7vh;
+  height: 7vh;
+  background-color: #f8f1f1;
+  color: #333;
+  padding-left: 10vh; /* espaciado interno de las celdas */
+  text-align: center;
+  border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
 
-th {
-  background-color: #f2f2f2; /* color de fondo del encabezado */
-  color: #333; /* color del texto del encabezado */
+
+th { 
+  font-weight: bold;
+  color: #fbf8f8; /* color del texto del encabezado */
   position: sticky;
   top: 0;
+
+}
+
+button {
+  font-weight: bold;
+  background-color: #FFAAFC;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.9vh 2.2vh;
+  text-decoration: none;
+  font-size: 1.6vh;
+  margin: 0.01vh 0.1vh;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8vh;
   
 }
+
+
+
+
+
+
 
 
