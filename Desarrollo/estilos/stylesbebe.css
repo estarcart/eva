@@ -20,7 +20,11 @@
     
   }
 
-  .homeop{ /*home de Iniciobebe.html*/
+  .home{ /*home de inicio.html*/
+    display: flex;
+    justify-content: center;
+  }
+  .homeop{ /*home de Inicioeva.html*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,9 +34,82 @@
     height: 100vh;
   }
   
+  .homecitas{ /*home de agendarcita.html*/
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .barra{
+    display: flex;
+    border-left: 0.6vh solid #FFD600;
+    height: 90vh;
+    border-top-left-radius: 0.2vh;
+    border-bottom-left-radius: 0.2vh;
+    border-top-right-radius: 0.2vh;
+    border-bottom-right-radius: 0.2vh;
+    width: 1vh;
+    margin-left: 60vh;
+    margin-top: -40vh;
+   
+  
+  }
+  .logobarra{ /*logo de EVA para la barra lateral*/
+    width: 45vh;
+  }
+  
+  .textobarra{
+  width: 25vh;
+  display: flex;
+  margin-inline: 20vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1vh;
+  
+  }
+  
+  .textobarra a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.5s ease;
+  }
+  
+  .textobarra a:hover{
+    display: flex;
+    text-decoration: none;
+    color: #F9ACBC;
+  }
+  
+  
+  .negrilla{
+  font-weight: bold
+  
+  }
+  
+  .inicioOp{ /*div de los logos de inicio.html*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+  }
+  
+  
+  .logoinicio{ /*logo de EVA*/
+    width: 60vh;
+    transition: transform 0.5s ease;
+  }
+  
+  .logoinicio:hover{  /*animación que al ponerle el mouse encima se agranda el logo de EVA*/
+    transform: scale(1.1);
+  }
   .logoinicio1{ /*logo de EVA sin animación*/
     width: 60vh;
   }
+  
   
   .textoinicio{
     display: flex;
@@ -51,11 +128,12 @@
     display: flex;
     margin-inline: 10vh;
     text-decoration: none;
-    color: #FFD600;
+    color: #F9ACBC;
   }
   
   .redes{
     display: flex;
+    
   }
   /*logos de redes sociales*/
   .wp{ 
@@ -71,3 +149,266 @@
     height: auto;
   }
   
+  
+  .table {
+    font-size: 1.6vh;
+    overflow: auto;
+    max-height: 80vh;
+    display: flex;
+    position: relative;
+    left: 10vh;
+    top: 10vh;
+    border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+    width: 100vh; /* ancho de la tabla */
+  }
+  
+  td {
+    border-radius: 3vh;
+    width: 7vh;
+    height: 7vh;
+    background-color: #f8f1f1;
+    color: #333;
+    padding-left: 10vh; /* espaciado interno de las celdas */
+    text-align: center;
+    border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
+  }
+  
+  
+  th { 
+    font-weight: bold;
+    color: #000000; /* color del texto del encabezado */
+    position: sticky;
+    top: 0;
+  
+  }
+  
+  button {
+    font-weight: bold;
+    background-color: #FFAAFC;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.9vh 2.2vh;
+    text-decoration: none;
+    font-size: 1.6vh;
+    margin: 0.01vh 0.1vh;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8vh;
+    
+  }
+  
+  #fecha-div{
+    font-weight: bold;
+    font-size: 9px;
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    left: 80vh;
+    width: 25vh;
+    display: flex;
+    margin-inline: 20vh;
+    align-items: right;
+    margin-top: -1vh;
+    
+    }
+   
+  .texto-citas{
+    font-weight: bold;
+    font-size: 9px;
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    left: 80vh;
+    width: 25vh;
+    display: flex;
+    margin-inline: 20vh;
+    align-items: right;
+    margin-top: -1vh;
+  
+  
+  }
+  
+  
+  .texto_inicio_empleado{ /*inicio empleado*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+  }
+  
+  .boton_inicio_empleado{ /*boton inicio de empleado*/
+    border-radius: 1vh;
+    padding: 0.5vh;
+    font-size: 2.5vh;
+    border: none;
+    text-align: center;
+  }
+  
+  
+  .btn_ventas_historial{
+    font-weight: bold;
+    background-color: #D458FF;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.9vh 2.2vh;
+    text-decoration: none;
+    font-size: 3vh;
+    margin: 0.01vh 0.1vh;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8vh;
+    width: 20vh;
+    height: 6vh;
+  }
+  
+  
+  .btn_ventas_registrar{
+    font-weight: bold;
+    background-color: #FFAAFC;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.9vh 2.2vh;
+    text-decoration: none;
+    font-size: 3vh;
+    margin: 0.01vh 0.1vh;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8vh;
+    width: 29%;
+    height: 6vh;
+    display: flex;
+  
+  }
+  
+  .ventas{
+    position: relative;
+    right: 25vh;
+  
+    
+    
+  }
+  
+  .ventas h1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 13.5vh;
+  
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4vh;
+    line-height: 39px;
+  
+    color: #000000;
+  }
+  
+  .ventas input{
+    margin:auto;
+    position: relative;
+    top: -5vh;
+    width: 90%;
+    height: 6vh;
+    border-radius: 1vh;
+    border: none;
+    
+  }
+  
+  
+  .label_ventas{
+    background-color: #b795ff;
+    width: 85%;
+    height: 3vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+    color: black;
+    position: relative;
+    top: -4vh;
+    padding: 3vh;
+    position: relative;
+    font-family: inherit;
+    
+    
+  }
+  
+  .label_ventas label{
+    position: relative;
+    top: -1vh;
+    font-weight: lighter;
+  }
+  
+  
+  .btn_ventas{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    width: 50%;
+  
+  }
+  .form-container {
+    width: 30vh;
+    height: 40vh;
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 160vh;
+    margin-right: 10vh;
+    margin-top: -40vh;
+  }
+  fieldset {
+    border: 1px solid #ffffff;
+    padding: 1vh;
+    margin-bottom: 2.7vh;
+    padding-left: 3vh;
+  }
+  legend {
+    margin-inline: 2vh;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1.3vh;
+  }
+  label {
+    font-size: 8px;
+    color: #333;
+    width: 13.9vh;
+    margin-right: 1.3vh;
+    font-weight: bold;
+  }
+  .formulario-inicio input[type="text"], input[type="email"], textarea {
+    font-size: 8px;
+    width: 41.9vh;
+    padding: 0.6vh;
+    border: 1px solid #ccc;
+    border-radius: 0.6vh;
+    margin-bottom: -5vh;
+    max-width: 23vh;
+    background-color: #D9D9D9;
+  
+  }
+  textarea {
+    height: 10vh;
+  }
+  input[type="submit"] {
+    padding: 0.6vh 2vh;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    margin-inline: 7vh;
+    margin-top: 5vh;
+  }
+  input[type="submit"]:hover {
+    background-color: #FFAAFC;
+    color: #333;
+  }

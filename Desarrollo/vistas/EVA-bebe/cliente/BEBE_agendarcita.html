@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+    function mostrarFechaActual() {
+      let fecha = new Date(); // Obtiene la fecha actual
+      let dia = fecha.getDate(); // Obtiene el día del mes (1-31)
+      let mes = fecha.getMonth() + 1; // Obtiene el mes (0-11, por lo que se le suma 1)
+      let anio = fecha.getFullYear(); // Obtiene el año (ej: 2022)
+      let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
+      document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
+    }
+  </script>
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVA - Usuarios</title>
-    <link rel="stylesheet" href="/Desarrollo/estilos/styles.css" />
+    <link rel="stylesheet" href="/Desarrollo/estilos/stylesbebe.css" />
   </head>
 
-  <body>
+  <body onload="mostrarFechaActual();">
     <section class="homecitas">
       <div class="textobarra">
         <img
           class="logobarra"
-          src="/Desarrollo/imagenes/logo-eva.png"
+          src="/Desarrollo/imagenes/logo-eva-bebe.png"
           alt="logo-eva"
         />
-        <a href="/Desarrollo/vistas/EVA/cliente/agendarcita.html">
-          <h1>Agendar cita</h1>
+        <a href="/Desarrollo/vistas/EVA-bebe/cliente/BEBE_agendarcita.html">
+          <h1 class="negrilla">Agendar cita</h1>
         </a>
-        <a href="#">
-          <h1 class="negrilla">Mis citas</h1>
+        <a href="/Desarrollo/vistas/EVA-bebe/cliente/BEBE_historialcitas.html">
+          <h1>Mis citas</h1>
           <br /><br /><br />
         </a>
         <a href="/Desarrollo/vistas/inicio.html">
@@ -28,7 +39,7 @@
         </a>
         <div class="barra"></div>
       </div>
-      <div class="texto-citas">Mis citas</div>
+      <div id="fecha-div"></div>
 
       <div class="table">
         <table>

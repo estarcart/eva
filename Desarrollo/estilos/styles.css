@@ -193,13 +193,12 @@ button {
 }
 
 #fecha-div{
-  font-weight: bold;
-  font-size: 9px;
+  font-size: 2vh;
   display: flex;
   position: absolute;
   top: 5vh;
   left: 80vh;
-  width: 25vh;
+  width: 28vh;
   display: flex;
   margin-inline: 20vh;
   align-items: right;
@@ -208,8 +207,7 @@ button {
   }
  
 .texto-citas{
-  font-weight: bold;
-  font-size: 9px;
+  font-size: 2vh;
   display: flex;
   position: absolute;
   top: 5vh;
@@ -230,7 +228,7 @@ button {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  font-size: 2vh;
+  font-size: 1.5vh;
 }
 
 .boton_inicio_empleado{ /*boton inicio de empleado*/
@@ -278,10 +276,13 @@ button {
 }
 
 .ventas{
-  position: relative;
-  right: 25vh;
-
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh;
   
 }
 
@@ -290,17 +291,17 @@ button {
   position: relative;
   width: 100%;
   height: 13.5vh;
-
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
-  font-size: 4vh;
+  font-size: 3vh;
   line-height: 39px;
 
   color: #FFFFFF;
 }
 
 .ventas input{
+  
   margin:auto;
   position: relative;
   top: -5vh;
@@ -313,11 +314,12 @@ button {
 
 
 .label_ventas{
+  display: flex;
   background-color: #b795ff;
   width: 85%;
   height: 3vh;
   border-radius: 1vh;
-  font-size: 3vh;
+  font-size: 1vh;
   color: black;
   position: relative;
   top: -4vh;
@@ -335,17 +337,6 @@ button {
 }
 
 
-.btn_ventas{
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 85%;
-  left: 40%;
-  width: 50%;
-
-}
 .form-container {
   width: 30vh;
   height: 40vh;
