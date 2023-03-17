@@ -356,7 +356,7 @@
     height: 40vh;
     display: flex;
     padding: 20px;
-    background-color: #fff;
+    background-color: #F9ACBC;
     border-radius: 20px;
     margin-left: 160vh;
     margin-right: 10vh;
@@ -370,27 +370,27 @@
   }
   legend {
     margin-inline: 2vh;
-    color: #333;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 1.6vh;
     font-weight: bold;
     margin-bottom: 1.3vh;
   }
   label {
-    font-size: 8px;
+    font-size: 0.8vh;
     color: #333;
     width: 13.9vh;
     margin-right: 1.3vh;
     font-weight: bold;
   }
   .formulario-inicio input[type="text"], input[type="email"], textarea {
-    font-size: 8px;
+    font-size: 0.8vh;
     width: 41.9vh;
     padding: 0.6vh;
-    border: 1px solid #ccc;
+    border: 1px solid #F9ACBC;
     border-radius: 0.6vh;
     margin-bottom: -5vh;
     max-width: 23vh;
-    background-color: #D9D9D9;
+    background-color: #ffffff;
   
   }
   textarea {
@@ -399,7 +399,7 @@
   input[type="submit"] {
     padding: 0.6vh 2vh;
     background-color: black;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 250, 250);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -409,6 +409,6 @@
     margin-top: 5vh;
   }
   input[type="submit"]:hover {
-    background-color: #FFAAFC;
+    background-color: #f5f4f5;
     color: #333;
   }
