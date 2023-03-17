@@ -101,6 +101,7 @@ font-weight: bold
   flex-wrap: wrap;
   align-content: center;
   text-align: center;
+  
 }
 
 
@@ -422,4 +423,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #FFAAFC;
   color: #333;
+}
+
+.politica{
+  display: flex;
+  position: relative;
+  top: 95vh;
+  left: -120vh;
+  font-size: 2vh;
+
 }
