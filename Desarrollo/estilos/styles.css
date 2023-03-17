@@ -48,9 +48,20 @@ body { /*cuerpo de la pagina*/
   width: 1vh;
   margin-left: 60vh;
   margin-top: -40vh;
- 
-
 }
+
+.barraadmin{
+    display: flex;
+    border-left: 0.6vh solid #FFD600;
+    height: 90vh;
+    border-top-left-radius: 0.2vh;
+    border-bottom-left-radius: 0.2vh;
+    border-top-right-radius: 0.2vh;
+    border-bottom-right-radius: 0.2vh;
+    width: 1vh;
+    margin-left: 60vh;
+    margin-top: -45vh;
+ }
 .logobarra{ /*logo de EVA para la barra lateral*/
   width: 45vh;
 }
@@ -282,15 +293,13 @@ button {
 }
 
 .ventas{  /*clase del div que contiene los textos y los imput*/
-  width: 95vh;
+  width: 80vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: center;
-  padding: 2vh;
-  position: relative;
   left: 30vh;
   
 }
