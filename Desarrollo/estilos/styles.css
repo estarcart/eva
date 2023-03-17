@@ -240,7 +240,7 @@ button {
 }
 
 
-.btn_ventas_historial{
+.btn_ventas_historial{ /*Boton historial*/
   font-weight: bold;
   background-color: #D458FF;
   color: rgb(0, 0, 0);
@@ -260,7 +260,7 @@ button {
 }
 
 
-.btn_ventas_registrar{
+.btn_ventas_registrar{  /*boton registrar venta*/
   font-weight: bold;
   background-color: #FFAAFC;
   color: rgb(0, 0, 0);
@@ -281,7 +281,7 @@ button {
 
 }
 
-.ventas{
+.ventas{  /*clase del div que contiene los textos y los imput*/
   width: 95vh;
   display: flex;
   flex-direction: row;
@@ -295,7 +295,7 @@ button {
   
 }
 
-.ventas h1{
+.ventas h1{   /*titulos de la interfaz venta empleado*/
   display: flex;
   position: relative;
   left: -20vh;
@@ -310,7 +310,7 @@ button {
   color: #FFFFFF;
 }
 
-.ventas input{
+.ventas input{   /*imput de la interfaz venta empleado*/
   
   margin:auto;
   position: relative;
@@ -325,7 +325,7 @@ button {
 }
 
 
-.label_ventas{
+.label_ventas{  /*Clase que contiene el titulo */
   display: flex;
   background-color: #b795ff;
   width: 100vh;
@@ -343,7 +343,8 @@ button {
   
 }
 
-.label_ventas label{
+.label_ventas label{ /*label "ingresar datos de la venta" */
+  display: flex;
   position: relative;
   top: -1vh;
   font-weight: lighter;
