@@ -266,8 +266,8 @@ button {
   width: 20vh;
   height: 6vh;
   position: relative;
-  top: 87vh;
-  left: -89.5vh;
+  top: 1vh;
+  right: 20vh;
 }
 
 
@@ -287,8 +287,8 @@ button {
   height: 6vh;
   display: flex;
   position: relative;
-  top: 81vh;
-  right: 25.8vh;
+  top: -5vh;
+  right: -28.5vh;
 
 }
 
