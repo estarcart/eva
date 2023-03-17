@@ -254,6 +254,9 @@ button {
   margin-right: 8vh;
   width: 20vh;
   height: 6vh;
+  position: relative;
+  top: 87vh;
+  left: -89.5vh;
 }
 
 
@@ -269,13 +272,17 @@ button {
   cursor: pointer;
   border-radius: 4px;
   margin-right: 8vh;
-  width: 29%;
+  width: 31vh;
   height: 6vh;
   display: flex;
+  position: relative;
+  top: 81vh;
+  right: 25.8vh;
 
 }
 
 .ventas{
+  width: 95vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -283,20 +290,23 @@ button {
   align-items: center;
   justify-content: center;
   padding: 2vh;
+  position: relative;
+  left: 30vh;
   
 }
 
 .ventas h1{
   display: flex;
   position: relative;
-  width: 100%;
+  left: -20vh;
+  width: 100vh;
   height: 13.5vh;
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
   font-size: 3vh;
   line-height: 39px;
-
+  
   color: #FFFFFF;
 }
 
@@ -305,10 +315,12 @@ button {
   margin:auto;
   position: relative;
   top: -5vh;
-  width: 90%;
+  width: 105vh;
+  left: -20vh;
   height: 6vh;
   border-radius: 1vh;
   border: none;
+  
   
 }
 
@@ -316,12 +328,13 @@ button {
 .label_ventas{
   display: flex;
   background-color: #b795ff;
-  width: 85%;
+  width: 100vh;
   height: 3vh;
   border-radius: 1vh;
   font-size: 1vh;
   color: black;
   position: relative;
+  left: -20vh;
   top: -4vh;
   padding: 3vh;
   position: relative;
@@ -334,6 +347,8 @@ button {
   position: relative;
   top: -1vh;
   font-weight: lighter;
+  font-size: 3vh;
+  width: 50vh;
 }
 
 
