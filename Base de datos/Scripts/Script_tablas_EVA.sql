@@ -19,12 +19,12 @@ create table contacto(
 
 create table tipo_persona(
 	idtipo_persona int primary key auto_increment not null,
-	nombre varchar(45)
+    nombre varchar(45)
 );
 
 create table usuario(
 	idusuario int primary key auto_increment not null,
-    usuario_nombre varchar(45) not null,
+    usario_nombre varchar(45) not null,
     contrasena varchar(45) not null,
     persona_idpersona int not null ,
     tipo_persona_idtipo_persona int not null
@@ -94,7 +94,7 @@ alter table cita_has_usuario add foreign key (usuario_persona_idpersona) referen
 alter table cita_has_usuario add foreign key (usuario_tipo_persona_idtipo_persona) references usuario(tipo_persona_idtipo_persona);
 
 alter table contacto add foreign key(persona_idpersona) references persona(idpersona);
- 
+
 alter table venta add foreign key(usuario_idusuario) references usuario(idusuario);
 alter table venta add foreign key(usuario_persona_idpersona) references usuario(persona_idpersona);
 alter table venta add foreign key(usuario_tipo_persona_idtipo_persona) references usuario(tipo_persona_idtipo_persona);
@@ -113,6 +113,55 @@ alter table inventario add foreign key(factura_venta_usuario_persona_idpersona) 
 alter table inventario add foreign key(factura_venta_usuario_tipo_persona_idtipo_persona) references factura(venta_usuario_tipo_persona_idtipo_persona);
 alter table inventario add foreign key(factura_venta_producto_idproducto) references factura(venta_producto_idproducto);
 alter table inventario add foreign key(cita_idcita) references cita(idcita);
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
