@@ -33,28 +33,37 @@
       </div>
 
       <div class="ventas">
-        <br />
-        <br />
-
         <h1>Registrar una venta:</h1>
-        <div class="label_ventas">
-          <label for="">Ingresa los datos de la venta</label>
-        </div>
+        <form method="post" action="#" class="ventasformulario">
+          <legend class="legend_venta">Ingresa los datos pedidos:</legend>
+          <label for="nombre_producto">NOMBRE DEL PRODUCTO:</label>
+          <input
+            type="text"
+            id="nombre_producto"
+            name="nombre_producto"
+            class="input_venta"
+          />
 
-        <h1>NOMBRE DEL PRODUCTO:</h1>
-        <input type="text" />
+          <label for="cantidad_producto">CANTIDAD VENDIDA:</label>
+          <input
+            type="number"
+            id="cantidad_producto"
+            name="cantidad_producto"
+            class="input_venta"
+          />
 
-        <h1>CANTIDAD VENDIDA:</h1>
-        <input type="text" />
+          <label for="total_producto">TOTAL:</label>
+          <input
+            type="text"
+            id="total_producto"
+            name="total_producto"
+            class="input_venta"
+          />
 
-        <h1>TOTAL:</h1>
-        <input type="text" />
-      </div>
-
-      <div>
-        <button type="button_" class="btn_ventas_historial">HISTORIAL</button>
-        <button type="button" class="btn_ventas_registrar">REGISTRAR VENTA</button>
+          <button type="submit">REGISTRAR VENTA</button>
+        </form>
       </div>
     </section>
   </body>
 </html>
+s

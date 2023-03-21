@@ -1,25 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 
-body { /*cuerpo de la pagina*/
+body {
+  /*cuerpo de la pagina*/
   font-size: 1.5vh;
   line-height: 1.5;
   color: #333;
-  background-color: #9E71FF;
+  background-color: #9e71ff;
   height: 100vh;
   margin: 0;
   color: white;
-  
 }
-.home{ /*home de inicio.html*/
+
+.home {
+  /*home de inicio.html*/
   display: flex;
   justify-content: center;
 }
-.homeop{ /*home de Inicioeva.html*/
+
+.homeop {
+  /*home de Inicioeva.html*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,17 +34,18 @@ body { /*cuerpo de la pagina*/
   height: 100vh;
 }
 
-.homecitas{ /*home de agendarcita.html*/
+.homecitas {
+  /*home de agendarcita.html*/
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100vh;
 }
 
-.barra{
+.barra {
   display: flex;
-  border-left: 0.6vh solid #FFD600;
+  border-left: 0.6vh solid #ffd600;
   height: 90vh;
   border-top-left-radius: 0.2vh;
   border-bottom-left-radius: 0.2vh;
@@ -50,80 +56,80 @@ body { /*cuerpo de la pagina*/
   margin-top: -40vh;
 }
 
-.barraadmin{
-    display: flex;
-    border-left: 0.6vh solid #FFD600;
-    height: 90vh;
-    border-top-left-radius: 0.2vh;
-    border-bottom-left-radius: 0.2vh;
-    border-top-right-radius: 0.2vh;
-    border-bottom-right-radius: 0.2vh;
-    width: 1vh;
-    margin-left: 60vh;
-    margin-top: -45vh;
- }
-.logobarra{ /*logo de EVA para la barra lateral*/
+.barraadmin {
+  display: flex;
+  border-left: 0.6vh solid #ffd600;
+  height: 90vh;
+  border-top-left-radius: 0.2vh;
+  border-bottom-left-radius: 0.2vh;
+  border-top-right-radius: 0.2vh;
+  border-bottom-right-radius: 0.2vh;
+  width: 1vh;
+  margin-left: 60vh;
+  margin-top: -45vh;
+}
+
+.logobarra {
+  /*logo de EVA para la barra lateral*/
   width: 45vh;
 }
 
-.textobarra{
-width: 25vh;
-display: flex;
-margin-inline: 20vh;
-flex-direction: column;
-align-items: center;
-margin-top: -1vh;
-
+.textobarra {
+  width: 25vh;
+  display: flex;
+  margin-inline: 20vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1vh;
 }
 
-.textobarra a{
+.textobarra a {
   display: flex;
   text-decoration: none;
   color: white;
   transition: color 0.5s ease;
 }
 
-.textobarra a:hover{
+.textobarra a:hover {
   display: flex;
   text-decoration: none;
-  color: #FFD600;
+  color: #ffd600;
 }
 
-
-.negrilla{
-font-weight: bold
-
+.negrilla {
+  font-weight: bold;
 }
 
-.inicioOp{ /*div de los logos de inicio.html*/
+.inicioOp {
+  /*div de los logos de inicio.html*/
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   text-align: center;
-  
 }
 
-
-.logoinicio{ /*logo de EVA*/
+.logoinicio {
+  /*logo de EVA*/
   width: 60vh;
   transition: transform 0.5s ease;
 }
 
-.logoinicio:hover{  /*animación que al ponerle el mouse encima se agranda el logo de EVA*/
+.logoinicio:hover {
+  /*animación que al ponerle el mouse encima se agranda el logo de EVA*/
   transform: scale(1.1);
 }
-.logoinicio1{ /*logo de EVA sin animación*/
+.logoinicio1 {
+  /*logo de EVA sin animación*/
   width: 60vh;
 }
 
-
-.textoinicio{
+.textoinicio {
   display: flex;
   margin: 2vh;
 }
 
-.textoinicio a{
+.textoinicio a {
   display: flex;
   margin-inline: 10vh;
   text-decoration: none;
@@ -131,31 +137,29 @@ font-weight: bold
   transition: color 0.5s ease;
 }
 
-.textoinicio a:hover{
+.textoinicio a:hover {
   display: flex;
   margin-inline: 10vh;
   text-decoration: none;
-  color: #FFD600;
+  color: #ffd600;
 }
 
-.redes{
+.redes {
   display: flex;
-  
 }
 /*logos de redes sociales*/
-.wp{ 
-width: 4vh;
-height: auto;
-}
-.fb{
+.wp {
   width: 4vh;
   height: auto;
 }
-.ig{
+.fb {
   width: 4vh;
   height: auto;
 }
-
+.ig {
+  width: 4vh;
+  height: auto;
+}
 
 .table {
   font-size: 1.6vh;
@@ -180,31 +184,14 @@ td {
   border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
 
-
-th { 
+th {
   font-weight: bold;
   color: #fbf8f8; /* color del texto del encabezado */
   position: sticky;
   top: 0;
-
 }
 
-button {
-  font-weight: bold;
-  background-color: #FFAAFC;
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.9vh 2.2vh;
-  text-decoration: none;
-  font-size: 1.6vh;
-  margin: 0.01vh 0.1vh;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8vh;
-  
-}
-
-#fecha-div{
+#fecha-div {
   font-size: 2vh;
   display: flex;
   position: absolute;
@@ -215,10 +202,9 @@ button {
   margin-inline: 20vh;
   align-items: right;
   margin-top: -1vh;
-  
-  }
- 
-.texto-citas{
+}
+
+.texto-citas {
   font-size: 2vh;
   display: flex;
   position: absolute;
@@ -229,141 +215,79 @@ button {
   margin-inline: 20vh;
   align-items: right;
   margin-top: -1vh;
-
-
 }
 
-
-.texto_inicio_empleado{ /*inicio empleado*/
+.ventas {
+  /*clase del div que contiene los textos y los imput*/
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5vh;
-}
-
-.boton_inicio_empleado{ /*boton inicio de empleado*/
-  border-radius: 1vh;
-  padding: 0.5vh;
-  font-size: 2.5vh;
-  border: none;
-  text-align: center;
-}
-
-
-.btn_ventas_historial{ /*Boton historial*/
-  font-weight: bold;
-  background-color: #D458FF;
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.9vh 2.2vh;
-  text-decoration: none;
-  font-size: 3vh;
-  margin: 0.01vh 0.1vh;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8vh;
-  width: 20vh;
-  height: 6vh;
-  position: relative;
-  top: 1vh;
-  right: 20vh;
-}
-
-
-.btn_ventas_registrar{  /*boton registrar venta*/
-  font-weight: bold;
-  background-color: #FFAAFC;
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 0.9vh 2.2vh;
-  text-decoration: none;
-  font-size: 3vh;
-  margin: 0.01vh 0.1vh;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8vh;
-  width: 31vh;
-  height: 6vh;
-  display: flex;
-  position: relative;
-  top: -5vh;
-  right: -28.5vh;
-
-}
-
-.ventas{  /*clase del div que contiene los textos y los imput*/
-  width: 80vh;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  align-items: center;
   justify-content: center;
-  left: 30vh;
-  
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
 }
 
-.ventas h1{   /*titulos de la interfaz venta empleado*/
+.ventas h1 {
+  font-size: 2.5vh;
+  font-weight: 500;
   display: flex;
-  position: relative;
-  left: -20vh;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 55vh;
+  justify-content: flex-start;
+}
+
+.ventasformulario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   width: 100vh;
-  height: 13.5vh;
-  font-family: inherit;
-  font-style: normal;
+  height: 50vh;
+  font-size: 1.8vh;
+}
+
+.ventasformulario label {
   font-weight: 600;
-  font-size: 3vh;
-  line-height: 39px;
-  
-  color: #FFFFFF;
 }
 
-.ventas input{   /*imput de la interfaz venta empleado*/
-  
-  margin:auto;
-  position: relative;
-  top: -5vh;
-  width: 105vh;
-  left: -20vh;
-  height: 6vh;
-  border-radius: 1vh;
-  border: none;
-  
-  
-}
-
-
-.label_ventas{  /*Clase que contiene el titulo */
+.ventas button {
+  padding: 1vh;
   display: flex;
+  border-radius: 0.8vh;
+  border: 1px solid #ffaafc;
+  background-color: #ffaafc;
+  font-weight: 700;
+  margin: 1vh;
+}
+
+.legend_venta {
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  font-weight: 500;
   background-color: #b795ff;
-  width: 100vh;
-  height: 3vh;
-  border-radius: 1vh;
-  font-size: 1vh;
+  padding: 1vh;
+  border-radius: 0.8vh;
+  width: 51vh;
   color: black;
-  position: relative;
-  left: -20vh;
-  top: -4vh;
-  padding: 3vh;
-  position: relative;
-  font-family: inherit;
-  
-  
+  padding-left: 2vh;
 }
 
-.label_ventas label{ /*label "ingresar datos de la venta" */
-  display: flex;
-  position: relative;
-  top: -1vh;
-  font-weight: lighter;
-  font-size: 3vh;
+.input_venta {
+  background-color: white;
+  padding: 1vh;
   width: 50vh;
+  margin: 1vh;
+  border-radius: 0.8vh;
+  border: 1px solid white;
 }
 
-
-.form-container {
+.formcontacto {
   width: 30vh;
   height: 40vh;
   display: flex;
@@ -374,27 +298,32 @@ button {
   margin-right: 10vh;
   margin-top: -40vh;
 }
-fieldset {
+
+.fieldseteva {
   border: 1px solid #ffffff;
   padding: 1vh;
   margin-bottom: 2.7vh;
   padding-left: 3vh;
 }
-legend {
-  margin-inline: 2vh;
+
+.legendeva {
+  margin-inline: 5vh;
   color: #333;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 1.3vh;
 }
-label {
+.labeleva {
   font-size: 8px;
   color: #333;
   width: 13.9vh;
   margin-right: 1.3vh;
   font-weight: bold;
 }
-.formulario-inicio input[type="text"], input[type="email"], textarea {
+
+.formulario-inicioeva input[type="text"],
+input[type="email"],
+textarea {
   font-size: 8px;
   width: 41.9vh;
   padding: 0.6vh;
@@ -402,13 +331,14 @@ label {
   border-radius: 0.6vh;
   margin-bottom: -5vh;
   max-width: 23vh;
-  background-color: #D9D9D9;
-
+  background-color: #d9d9d9;
 }
-textarea {
+
+.textopregunta {
   height: 10vh;
 }
-input[type="submit"] {
+
+.botoneva[type="submit"] {
   padding: 0.6vh 2vh;
   background-color: black;
   color: white;
@@ -420,16 +350,16 @@ input[type="submit"] {
   margin-inline: 7vh;
   margin-top: 5vh;
 }
-input[type="submit"]:hover {
-  background-color: #FFAAFC;
-  color: #333;
+
+.botoneva:hover[type="submit"]:hover {
+  background-color: #ffaafc;
+  color: #ffffff;
 }
 
-.politica{
+.politica {
   display: flex;
   position: relative;
   top: 95vh;
   left: -120vh;
   font-size: 2vh;
-
 }
