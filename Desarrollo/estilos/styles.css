@@ -363,3 +363,123 @@ textarea {
   left: -120vh;
   font-size: 2vh;
 }
+
+body{
+  background-color: #9E71FF;
+  ;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #fff;
+  width: 50vh;
+  background-color: #fff;
+}
+.input[type=text] {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  width: 20vh;
+}
+
+.la_tabla{
+  width: 100vh;
+}
+
+.la_tabla td{
+  border-radius: 1vh;
+}
+
+.la_tabla th{
+  color: #fff;
+  font-family: "Inter";
+  font-size: 2.5vh;
+  line-height: 6vh;
+}
+
+.tabla h1{
+  font-family: "Inter";
+  font-size: 3vh;
+  line-height: 3vh;
+  color: #fff;
+  justify-content: left;
+}
+
+
+.tablabtn{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100vh;
+  margin-bottom: 2vh;
+}
+
+.btnagregar {
+  background-color: #FFAAFC;
+  border-color: #FFAAFC;
+  border-radius: 1vh;
+  width: 15vh;
+  height: 5vh;
+}
+
+.btnhistorial {
+  background-color: #D458FF;
+  border-color: #D458FF;
+  border-radius: 1vh;
+  width: 15vh;
+  height: 5vh;
+}
+
+
+.img1div{
+  background-color: #D458FF;
+  border-radius: 1vh;
+  display: flex;
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  margin: 1vh;
+}
+
+.img2div{
+  background-color: #A107FF;
+  border-radius: 1vh;
+  display: flex;
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  margin: 1vh;
+}
+
+.img3{
+  background-color: #C7ADFF;
+  border-radius: 1vh;
+  display: flex;
+  width: 4vh;
+  height: 4vh;
+  position: relative;
+  right: 30vh;
+  top: 0.5vh;
+}
+
+.tabla{
+  position: relative;
+ 
+  top: 5vh;
+}
