@@ -161,7 +161,7 @@ body {
   height: auto;
 }
 
-.table {
+.tablacitas {
   font-size: 1.6vh;
   overflow: auto;
   max-height: 80vh;
@@ -173,7 +173,8 @@ body {
   width: 100vh; /* ancho de la tabla */
 }
 
-td {
+.tdtablacitas {
+  position: relative;
   border-radius: 3vh;
   width: 7vh;
   height: 7vh;
@@ -184,11 +185,25 @@ td {
   border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
 
-th {
+.thcitas {
   font-weight: bold;
   color: #fbf8f8; /* color del texto del encabezado */
   position: sticky;
   top: 0;
+}
+
+.botoncitas {
+  font-weight: bold;
+  background-color: #ffaafc;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 0.9vh 2.2vh;
+  text-decoration: none;
+  font-size: 1.6vh;
+  margin: 0.01vh 0.1vh;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8vh;
 }
 
 #fecha-div {
@@ -204,13 +219,13 @@ th {
   margin-top: -1vh;
 }
 
-.texto-citas {
+#textomiscitas{
   font-size: 2vh;
   display: flex;
   position: absolute;
   top: 5vh;
   left: 80vh;
-  width: 25vh;
+  width: 28vh;
   display: flex;
   margin-inline: 20vh;
   align-items: right;
@@ -321,9 +336,8 @@ th {
   font-weight: bold;
 }
 
-.formulario-inicioeva input[type="text"],
-input[type="email"],
-textarea {
+.formulario-inicioeva input[type="text"], .formulario-email,
+.textopregunta {
   font-size: 8px;
   width: 41.9vh;
   padding: 0.6vh;
@@ -483,3 +497,103 @@ body{
  
   top: 5vh;
 }
+.logoeditarcita{
+  width: 5vh;
+  height: 5vh;
+  position: absolute;
+  right: 10vh;
+  left: 15%;
+  top: 1vh;
+  
+  
+  }
+  .logoborrarcita{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    left: 50%;
+    top: 1vh;
+   
+    
+    }
+  
+    #ventana-editarcita {
+      position: fixed;
+      top: 10%;
+      left: 45%;
+      background-color: #9e71ff;
+      opacity: 0.9;
+      transition: opacity 1s ease;
+      padding: 2.79vh;
+      border: 1px solid #883ff6;
+      border-radius: 10px;
+      display: none;
+      z-index: 9999;
+      width: 70vh;
+      height: 40vh;
+    }
+  
+  #ventana-editarcita div.tablacitas{
+    font-size: 1.6vh;
+    overflow: auto;
+    max-height: 80vh;
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+    border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+    width: 100vh; /* ancho de la tabla */
+  
+  }
+  
+  .logoX{
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+  
+  
+  }
+  #textoemergente{
+    font-size: 2vh;
+    display: flex;
+    position: absolute;
+    top: 1.2vh;
+    left: -16vh;
+    width: 40vh;
+    display: flex;
+    margin-inline: 20vh;
+    align-items: right;
+    margin-top: -1vh;
+  }
+  
+  
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.5vh;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 3em;
+    position: relative;
+    right: 5vh;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .star-rating :checked ~ label {
+    color: #f90;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #fc0;
+  }
