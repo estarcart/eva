@@ -9,6 +9,17 @@
       let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
       document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
     }
+    
+      function mostrarVentanaEmergenteEPS() {
+        var ventanaEmergente = document.getElementById("ventana-eps");
+        ventanaEmergente.style.display = "block";
+      }
+      
+      function ocultarVentanaEmergenteEPS() {
+        var ventanaEmergente = document.getElementById("ventana-eps");
+        ventanaEmergente.style.display = "none";
+      }
+
   </script>
 
   <head>
@@ -18,7 +29,6 @@
     <title>EVA - Usuarios</title>
     <link rel="stylesheet" href="/Desarrollo/estilos/styles.css" />
   </head>
-
   <body onload="mostrarFechaActual();">
     <section class="homecitas">
       <div class="textobarra">
@@ -56,7 +66,7 @@
               <td class="tdtablacitas" th:text="${cita.tipo}"></td>
               <td class="tdtablacitas" th:text="${cita.doctor}"></td>
               <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas"><button class="botoncitas">RESERVAR</button></td>
+              <td class="tdtablacitas"><button class="botoncitas" onclick="mostrarVentanaEmergenteEPS()">RESERVAR</button></td>
             </tr>
             <tr th:each="cita: ${citas}">
               <td class="tdtablacitas" th:text="${cita.tipo}"></td>
@@ -73,6 +83,29 @@
           </tbody>
         </table>
       </div>
+      <div id="ventana-eps">
+        <div id="textoemergente" class="negrilla">Responda la siguiente pregunta:<br>
+          ¿Pertenece a una EPS?
+
+
+
+        </div>
+              
+        <img class="logoX" src="/Desarrollo/imagenes/LogoX.png" onclick="ocultarVentanaEmergenteEPS()"><img>
+        <div class="divseleccioneps">
+          <form action="#" method="POST">
+        <label>
+          <input type="radio" name="opcion" value="si" required>
+          <span>Sí</span>
+        </label>
+        <label>
+          <input type="radio" name="opcion" value="no" required>
+          <span>No</span>
+        </label>
+        <button class="botoneps" type="submit">RESERVAR</button>
+      </form>
+      </div>
+     </div>
     </section>
   </body>
 </html>

@@ -177,7 +177,7 @@ body {
   position: relative;
   border-radius: 3vh;
   width: 7vh;
-  height: 7vh;
+  height: 5vh;
   background-color: #f8f1f1;
   color: #333;
   padding-left: 10vh; /* espaciado interno de las celdas */
@@ -627,3 +627,158 @@ td {
 .star-rating label:hover ~ label {
   color: #fc0;
 }
+
+  
+  
+  }
+  .logoborrarcita{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    left: 50%;
+    top: 1vh;
+   
+    
+    }
+  
+    #ventana-editarcita {
+      position: fixed;
+      top: 10%;
+      left: 45%;
+      background-color: #9e71ff;
+      opacity: 0.9;
+      transition: opacity 1s ease;
+      padding: 2.79vh;
+      border: 1px solid #883ff6;
+      border-radius: 10px;
+      display: none;
+      z-index: 9999;
+      width: 70vh;
+      height: 40vh;
+    }
+  
+  #ventana-editarcita div.tablacitas{
+    font-size: 1.6vh;
+    overflow: auto;
+    max-height: 80vh;
+    position: absolute;
+    left: 10vh;
+    top: 10vh;
+    border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+    width: 100vh; /* ancho de la tabla */
+  
+  }
+  
+  .logoX{
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    right: 1vh;
+    top: 0.1vh;
+  
+  
+  }
+  #textoemergente{
+    font-size: 2vh;
+    display: flex;
+    position: absolute;
+    top: 1.2vh;
+    left: -16vh;
+    width: 40vh;
+    display: flex;
+    margin-inline: 20vh;
+    align-items: right;
+    margin-top: -1vh;
+  }
+  
+  
+  .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.5vh;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 3em;
+    position: relative;
+    right: 5vh;
+  }
+  
+  .star-rating input {
+    display: none;
+  }
+  
+  .star-rating label {
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .star-rating :checked ~ label {
+    color: #f90;
+  }
+  
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    color: #fc0;
+  }
+
+  #ventana-eps {
+    position: fixed;
+    top: 10%;
+    left: 45%;
+    background-color: #9e71ff;
+    opacity: 0.9;
+    transition: opacity 1s ease;
+    padding: 2.79vh;
+    border: 1px solid #883ff6;
+    border-radius: 10px;
+    display: none;
+    z-index: 9999;
+    width: 40vh;
+    height: 15vh;
+  }
+
+
+  .divseleccioneps{
+    position: relative;
+    top: 5vh;
+    left: 1vh;
+  }
+
+  .botoneps{
+    font-size: 2vh;
+    position: relative;
+    left: 15vh;
+    top: 5vh;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: white;
+    
+
+
+  }
+
+  .tablahcitas {
+    font-size: 1.6vh;
+    overflow: auto;
+    max-height: 80vh;
+    display: flex;
+    position: relative;
+    left: 10vh;
+    top: 10vh;
+    border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+    width: 100vh; /* ancho de la tabla */
+  }
+  
+  .tdtablahcitas {
+    position: relative;
+    border-radius: 3vh;
+    width: 7vh;
+    height: 4vh;
+    background-color: #f8f1f1;
+    color: #333;
+    padding-left: 10vh; /* espaciado interno de las celdas */
+    text-align: center;
+    border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
+  }
