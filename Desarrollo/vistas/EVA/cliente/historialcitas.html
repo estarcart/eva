@@ -44,7 +44,7 @@
 
       <div id="textomiscitas" class="negrilla">Mis citas</div><br>
 
-      <div class="tablacitas">
+      <div class="tablahcitas">
         <table>
           <thead>
             <tr>
@@ -58,16 +58,16 @@
            
            
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas"><img class="logoborrarcita" src="/Desarrollo/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/Desarrollo/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
+              <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
+              <td class="tdtablahcitas" th:text="${cita.doctor}"></td>
+              <td class="tdtablahcitas" th:text="{cita.hora}"></td>
+              <td class="tdtablahcitas"><img class="logoborrarcita" src="/Desarrollo/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/Desarrollo/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas">
+              <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
+              <td class="tdtablahcitas" th:text="${cita.doctor}"></td>
+              <td class="tdtablahcitas" th:text="{cita.hora}"></td>
+              <td class="tdtablahcitas">
                 <div class="star-rating">
                   <input type="radio" id="5-stars" name="rating" value="5" />
                   <label for="5-stars" class="star">&#9733;</label>
@@ -93,14 +93,7 @@
       </div>
       <div id="ventana-editarcita">
         <table>
-          <thead>
-            <tr>
-              <th class="thcitas">TIPO</th>
-              <th class="thcitas">DOCTOR</th>
-              <th class="thcitas">HORA</th>
-              <th class="thcitas">OPCION</th>
-            </tr>
-          </thead>
+          
           <tbody>
             <tr th:each="cita: ${citas}">
               <td class="tdtablacitas" th:text="${cita.tipo}"></td>
