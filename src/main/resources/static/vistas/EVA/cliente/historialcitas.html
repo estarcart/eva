@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EVA - Usuarios</title>
-    <link rel="stylesheet" href="/Desarrollo/estilos/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
 
   <body>
@@ -26,17 +26,17 @@
       <div class="textobarra">
         <img
           class="logobarra"
-          src="/Desarrollo/imagenes/logo-eva.png"
+          src="/imagenes/logo-eva.png"
           alt="logo-eva"
         />
-        <a href="/Desarrollo/vistas/EVA/cliente/agendarcita.html">
+        <a href="/vistas/EVA/cliente/agendarcita.html">
           <h1>Agendar cita</h1>
         </a>
         <a href="#">
           <h1 class="negrilla">Mis citas</h1>
           <br /><br /><br />
         </a>
-        <a href="/Desarrollo/vistas/inicio.html">
+        <a href="/index.html">
           <h1>Cerrar sesión</h1>
         </a>
         <div class="barra"></div>
@@ -61,7 +61,7 @@
               <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
               <td class="tdtablahcitas" th:text="${cita.doctor}"></td>
               <td class="tdtablahcitas" th:text="{cita.hora}"></td>
-              <td class="tdtablahcitas"><img class="logoborrarcita" src="/Desarrollo/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/Desarrollo/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
+              <td class="tdtablahcitas"><img class="logoborrarcita" src="/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/Desarrollo/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
             </tr>
             <tr th:each="cita: ${citas}">
               <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
@@ -117,7 +117,7 @@
         </table>
         <div id="textoemergente" class="negrilla">Modifique el horario de su cita:</div>
               
-        <img class="logoX" src="/Desarrollo/imagenes/LogoX.png" onclick="ocultarVentanaEmergenteCitas()"><img>
+        <img class="logoX" src="/imagenes/LogoX.png" onclick="ocultarVentanaEmergenteCitas()"><img>
      </div>
     </section>
   </body>
