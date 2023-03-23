@@ -301,7 +301,7 @@ body {
   align-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  padding: 2vh;
   width: 100vh;
   height: 50vh;
   font-size: 1.8vh;
@@ -419,26 +419,14 @@ body {
   font-size: 2vh;
 }
 
-body {
-  background-color: #9e71ff;
-}
-
 .table {
   border-collapse: collapse;
   width: 100%;
-
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.th,
-td {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid #fff;
-  width: 50vh;
-  background-color: #fff;
-}
+
 .input[type="text"] {
   padding: 5px;
   border: 1px solid #fff;
@@ -450,26 +438,41 @@ td {
 .action-buttons {
   display: flex;
   justify-content: center;
-  width: 20vh;
 }
 
 .la_tabla {
   width: 100vh;
+  border-collapse: collapse;
+  margin: 2vh;
+  color: black;
+  text-align: center;
+  background-color: white;
+}
+
+.la_tabla thead {
+  background-color: #711af3;
+  border-bottom: 1vh solid #9e71ff;
 }
 
 .la_tabla td {
-  border-radius: 1vh;
+  font-weight: 500;
+  font-size: 1.8vh;
 }
 
 .la_tabla th {
   color: #fff;
-  font-family: "Inter";
   font-size: 2.5vh;
   line-height: 6vh;
+  font-weight: 500;
+}
+
+.la_tabla tr:nth-child(even) {
+  background-color: #ddd;
 }
 
 .tabla h1 {
-  font-family: "Inter";
+  padding-bottom: 3vh;
+  font-weight: 600;
   font-size: 3vh;
   line-height: 3vh;
   color: #fff;
@@ -481,20 +484,30 @@ td {
   box-sizing: border-box;
   justify-content: space-between;
   width: 100vh;
-  margin-bottom: 2vh;
+}
+
+.tablabtn button {
+  font-size: 2.5vh;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tablabtn button:hover {
+  transform: scale(1.1);
+  color: white;
 }
 
 .btnagregar {
   background-color: #ffaafc;
-  border-color: #ffaafc;
-  border-radius: 1vh;
+  border: 1px solid #ffaafc;
+  border-radius: 1.5vh;
   width: 15vh;
   height: 5vh;
 }
 
 .btnhistorial {
   background-color: #d458ff;
-  border-color: #d458ff;
+  border: 1px solid #d458ff;
   border-radius: 1vh;
   width: 15vh;
   height: 5vh;
@@ -508,6 +521,11 @@ td {
   height: 5vh;
   text-align: center;
   margin: 1vh;
+  cursor: pointer;
+}
+
+.img1div:hover {
+  transform: scale(1.1);
 }
 
 .img2div {
@@ -518,22 +536,28 @@ td {
   height: 5vh;
   text-align: center;
   margin: 1vh;
+  cursor: pointer;
+}
+
+.img2div:hover {
+  transform: scale(1.1);
 }
 
 .img3 {
   background-color: #c7adff;
   border-radius: 1vh;
   display: flex;
-  width: 4vh;
-  height: 4vh;
+  align-items: center;
+  justify-content: center;
+  width: 5vh;
+  height: 5vh;
   position: relative;
   right: 30vh;
-  top: 0.5vh;
+  border: 0px;
 }
 
 .tabla {
   position: relative;
-
   top: 5vh;
 }
 .logoeditarcita {
