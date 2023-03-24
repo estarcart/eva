@@ -31,3 +31,28 @@ build/
 
 ### VS Code ###
 .vscode/
+# Carpeta de node_modules
+node_modules/
+
+# Carpeta de distribución de Electron
+dist/
+
+# Archivos de registro de depuración de Electron
+*.log
+
+*.properties
+*.xml
+*.yml
+
+# Archivos de respaldo y caché
+*~
+*.swp
+.DS_Store
+Thumbs.db
+# IntelliJ IDEA
+.idea/
+
+# Maven
+.mvn/
+
+
