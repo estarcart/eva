@@ -402,3 +402,32 @@ textarea {
   background-color: #7e7e7e;
   color: #ffffff;
 }
+
+
+#ventana-baby {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  background-color: #9e71ff;
+  opacity: 0.9;
+  transition: opacity 1s ease;
+  padding: 2.79vh;
+  border: 1px solid #883ff6;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+  width: 40vh;
+  height: 30vh;
+}
+#textoemergente {
+  font-size: 2vh;
+  display: flex;
+  position: absolute;
+  top: 1.2vh;
+  left: -16vh;
+  width: 40vh;
+  display: flex;
+  margin-inline: 20vh;
+  align-items: right;
+  margin-top: -1vh;
+}
