@@ -408,6 +408,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.action-button {
+  display: flex;
+  justify-content: center;
+}
 
 .la_tabla {
   width: 100vh;
@@ -667,6 +671,7 @@ body {
   position: absolute;
   right: 1vh;
   top: 0.1vh;
+  cursor: pointer;
 }
 #textoemergente {
   font-size: 2vh;
@@ -767,3 +772,6 @@ body {
   text-align: center;
   border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
+
+
+

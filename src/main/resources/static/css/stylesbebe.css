@@ -369,8 +369,8 @@ button {
 }
 
 .formulario-iniciobaby input[type="text"],
-input[type="email"],
-textarea {
+.formulario-email,
+.textopregunta {
   font-size: 8px;
   width: 41.9vh;
   padding: 0.6vh;
@@ -402,13 +402,21 @@ textarea {
   background-color: #7e7e7e;
   color: #ffffff;
 }
+.divformbaby {
+  position: relative;
+  top: 5vh;
+  left: 1vh;
+  width: 30vh;
+  height: 20vh;
+
+}
 
 
 #ventana-baby {
   position: fixed;
   top: 10%;
   left: 45%;
-  background-color: #9e71ff;
+  background-color: #93D6F0;
   opacity: 0.9;
   transition: opacity 1s ease;
   padding: 2.79vh;
@@ -419,7 +427,7 @@ textarea {
   width: 40vh;
   height: 30vh;
 }
-#textoemergente {
+#textoemergentebaby {
   font-size: 2vh;
   display: flex;
   position: absolute;
@@ -431,3 +439,59 @@ textarea {
   align-items: right;
   margin-top: -1vh;
 }
+.botonformbaby {
+  font-size: 2vh;
+  position: relative;
+  left: 15vh;
+  top: 5vh;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+}
+.logoXx {
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+  cursor: pointer;
+}
+
+.formulario-datosbebe input{
+  font-size: 12px;
+  width: 41.9vh;
+  padding: 0.3vh;
+  border: 1px solid #f9acbc;
+  border-radius: 0.6vh;
+  margin-bottom: -2vh;
+  max-width: 23vh;
+  background-color: #ffffff;
+}
+
+.botondatosbebe {
+  font-size: 2vh;
+  position: relative;
+  left: 27vh;
+  top: -2vh;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: black;
+}
+
+.labelformbaby {
+  position: relative;
+  top: -3vh;
+  font-size: 10px;
+  color: #333;
+  width: 13.9vh;
+  margin-right: 1.3vh;
+  font-weight: bold;
+}
+
+
+
+
+
+
