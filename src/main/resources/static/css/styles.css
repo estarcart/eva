@@ -418,6 +418,7 @@ body {
   background-color: white;
   overflow: auto;
   max-height: 80vh;
+
 }
 
 .la_tabla thead {
@@ -437,8 +438,9 @@ body {
   font-weight: 500;
 }
 
+
 .la_tabla tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: #dddddd;
 }
 
 .tabla h1 {
