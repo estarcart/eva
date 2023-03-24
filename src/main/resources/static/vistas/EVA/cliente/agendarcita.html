@@ -50,22 +50,22 @@
       </div>
       <div id="fecha-div" class="negrilla"></div>
 
-      <div class="tablacitas">
-        <table>
+      <div class="tabla">
+        <table class="la_tabla">
           <thead>
             <tr>
-              <th class="thcitas">TIPO</th>
-              <th class="thcitas">DOCTOR</th>
-              <th class="thcitas">HORA</th>
-              <th class="thcitas">OPCION</th>
+              <th>TIPO</th>
+              <th>DOCTOR</th>
+              <th>HORA</th>
+              <th>OPCION</th>
             </tr>
           </thead>
           <tbody>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas">
+              <td th:text="${cita.tipo}">a</td>
+              <td th:text="${cita.doctor}">a</td>
+              <td th:text="{cita.hora}">a</td>
+              <td class="action-buttons">
                 <button
                   class="botoncitas"
                   onclick="mostrarVentanaEmergenteEPS()"
@@ -75,18 +75,18 @@
               </td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas">
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td class="action-buttons">
                 <button class="botoncitas">RESERVAR</button>
               </td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas">
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td class="action-buttons">
                 <button class="botoncitas">RESERVAR</button>
               </td>
             </tr>
