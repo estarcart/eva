@@ -19,6 +19,15 @@
       var ventanaEmergente = document.getElementById("ventana-eps");
       ventanaEmergente.style.display = "none";
     }
+    function mostrarVentanaEmergenteBaby() {
+      var ventanaEmergente = document.getElementById("ventana-baby");
+      ventanaEmergente.style.display = "block";
+    }
+
+    function ocultarVentanaEmergenteBaby() {
+      var ventanaEmergente = document.getElementById("ventana-baby");
+      ventanaEmergente.style.display = "none";
+    }
   </script>
 
   <head>
@@ -78,8 +87,8 @@
               <td th:text="${cita.tipo}"></td>
               <td th:text="${cita.doctor}"></td>
               <td th:text="{cita.hora}"></td>
-              <td class="action-buttons">
-                <button class="botoncitas">RESERVAR</button>
+              <td class="action-button">
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
               </td>
             </tr>
             <tr th:each="cita: ${citas}">
@@ -117,7 +126,7 @@
             <button class="botoneps" type="submit">RESERVAR</button>
           </form>
         </div>
-      </div>
+        </div>
     </section>
   </body>
 </html>

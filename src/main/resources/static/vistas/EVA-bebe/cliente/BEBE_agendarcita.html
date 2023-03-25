@@ -81,15 +81,42 @@
       </div>
       <div id="ventana-baby">
         <div id="textoemergente" class="negrilla">
-          Responda la siguiente pregunta:<br />
-          ¿Pertenece a una EPS?
+          Ingrese los siguientes datos del bebé:
+          <img
+                  class="logoXx"
+                  src="/imagenes/LogoX.png"
+                  onclick="ocultarVentanaEmergenteBaby()"
+          />
         </div>
+        <div class="divformbaby">
+          <form action="#" method="post" class="formulario-datosbebe">
 
-        <img
-                class="logoX"
-                src="/imagenes/LogoX.png"
-                onclick="ocultarVentanaEmergenteBaby()"
-        /><img />
+            <label class="labelformbaby">
+              Nombre:
+              <input type="text" name="nombre" required>
+            </label>
+            <br>
+            <label class="labelformbaby">
+              Edad : <br>
+              <input type="text" name="edad" required>
+            </label >
+            <br>
+            <label class="labelformbaby">
+              Fecha de nacimiento:
+              <input type="date" name="fecha_nacimiento" required>
+            </label>
+            <br>
+            <label class="labelformbaby">
+              Adulto responsable a cargo:
+              <input type="text" name="responsable" required>
+            </label>
+            <br>
+            <button type="submit" class="botondatosbebe">Enviar</button>
+
+          </form>
+        </div>
+      </div>
+
     </section>
   </body>
 </html>
