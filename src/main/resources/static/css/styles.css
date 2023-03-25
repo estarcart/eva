@@ -166,25 +166,22 @@ body {
   background-color: #ffaafc;
   color: rgb(0, 0, 0);
   border: none;
-  padding: 0.9vh 2.2vh;
+  padding: 1vh;
   text-decoration: none;
   font-size: 1.6vh;
-  margin: 0.01vh 0.1vh;
+  margin: 1vh;
   cursor: pointer;
-  border-radius: 4px;
-  margin-right: 8vh;
+  border-radius: 1vh;
 }
 
 #fecha-div {
-  font-size: 2vh;
+  font-size: 3.5vh;
   display: flex;
   position: absolute;
   top: 5vh;
-  left: 80vh;
-  width: 28vh;
+  left: 82.5vh;
+  width: 70vh;
   display: flex;
-  margin-inline: 20vh;
-  align-items: right;
   margin-top: -1vh;
 }
 
@@ -438,6 +435,9 @@ body {
   font-weight: 500;
 }
 
+.la_tabla tr{
+
+}
 
 .la_tabla tr:nth-child(even) {
   background-color: #dddddd;
@@ -531,7 +531,7 @@ body {
 
 .tabla {
   position: relative;
-  top: 5vh;
+  top: 10vh;
 }
 .logoeditarcita {
   width: 5vh;

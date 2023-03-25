@@ -44,29 +44,29 @@
 
       <div id="textomiscitas" class="negrilla">Mis citas</div><br>
 
-      <div class="tablahcitas">
+      <div class="la_tabla">
         <table>
           <thead>
             <tr>
-              <th class="thcitas">TIPO</th>
-              <th class="thcitas">DOCTOR</th>
-              <th class="thcitas">HORA</th>
-              <th class="thcitas">OPCION</th>
+              <th>TIPO</th>
+              <th>DOCTOR</th>
+              <th>HORA</th>
+              <th>OPCION</th>
             </tr>
           </thead>
           <tbody>
            
            
             <tr th:each="cita: ${citas}">
-              <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablahcitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablahcitas" th:text="{cita.hora}"></td>
-              <td class="tdtablahcitas"><img class="logoborrarcita" src="/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/Desarrollo/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td><img class="logoborrarcita" src="/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablahcitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablahcitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablahcitas" th:text="{cita.hora}"></td>
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
               <td class="tdtablahcitas">
                 <div class="star-rating">
                   <input type="radio" id="5-stars" name="rating" value="5" />
