@@ -129,4 +129,77 @@ tabla html:
 </table>
 
 
+<script>
+  function agregarFila() {
+
+    var nombre = document.getElementById("nombre_producto").value;
+    var cantidad = document.getElementById("cantidad_producto").value;
+    var totalp = document.getElementById("total_producto").value;
+
+    // Obtener la ruta del archivo HTML que contiene la tabla
+  var rutaTabla = document.getElementById("formproduct").getAttribute("action");
+
+  // Obtener el contenido del archivo HTML que contiene la tabla
+  fetch(rutaTabla)
+    .then(response => response.text())
+    .then(data => {
+      // Crear un elemento temporal para contener el contenido del archivo HTML
+      var tempEl = document.createElement("div");
+      tempEl.innerHTML = data;
+
+      // Obtener la tabla del contenido del archivo HTML
+      var tabla = tempEl.querySelector("#tablapagos");
+
+    // Crear una nueva fila en la tabla
+    var fila = tabla.insertRow();
+    var celdanombre = fila.insertCell(0);
+    var celdacantidad = fila.insertCell(1);
+    var celdatotal = fila.insertCell(2);
+    celdanombre.innerHTML = nombre;
+    celdacantidad.innerHTML = cantidad;
+    celdatotal.innerHTML = totalp;
+
+    // Actualizar la tabla en el archivo HTML que contiene la tabla
+      var tablacontenedor = document.querySelector("#tablacontenedor");
+      tablacontenedor.innerHTML = "";
+      tablacontenedor.appendChild(tablapagos);
+    })
+    .catch(error => console.log(error));
+
+// Borrar los valores de los campos de entrada
+   document.getElementById("nombre_producto").value = "";
+   document.getElementById("cantidad_producto").value = "";
+   document.getElementById("total_producto").value = "";
+  }
+</script>
+
+ <form class="ventasformulario" id="formproduct" action="/vistas/EVA/cliente/historialpagos.html" onsubmit="agregarFila(); return false;">
+          <legend class="legend_venta">Ingresa los datos pedidos:</legend>
+          <label for="nombre_producto">NOMBRE DEL PRODUCTO:</label>
+          <input
+            type="text"
+            id="nombre_producto"
+            name="nombre_producto"
+            class="input_venta"
+          />
+
+          <label for="cantidad_producto">CANTIDAD VENDIDA:</label>
+          <input
+            type="number"
+            id="cantidad_producto"
+            name="cantidad_producto"
+            class="input_venta"
+          />
+
+          <label for="total_producto">TOTAL:</label>
+          <input
+            type="text"
+            id="total_producto"
+            name="total_producto"
+            class="input_venta"
+          />
+
+          <button type="submit">REGISTRAR VENTA</button>
+        </form>
+
 
