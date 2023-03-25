@@ -175,7 +175,7 @@ body {
 }
 
 #fecha-div {
-  font-size: 3.5vh;
+  font-size: 3vh;
   display: flex;
   position: absolute;
   top: 5vh;
@@ -186,11 +186,11 @@ body {
 }
 
 #textomiscitas {
-  font-size: 2vh;
+  font-size: 3vh;
   display: flex;
   position: absolute;
   top: 5vh;
-  left: 80vh;
+  left: 62vh;
   width: 28vh;
   display: flex;
   margin-inline: 20vh;
@@ -537,21 +537,6 @@ body {
   position: relative;
   top: 10vh;
 }
-.logoeditarcita {
-  width: 5vh;
-  height: 1vh;
-  position: absolute;
-  right: 10vh;
-  left: 15%;
-  top: 1vh;
-}
-.logoborrarcita {
-  width: 5vh;
-  height: 5vh;
-  position: absolute;
-  left: 50%;
-  top: 1vh;
-}
 
 #ventana-editarcita {
   position: fixed;
@@ -604,12 +589,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
   font-size: 2.5vh;
-  justify-content: space-around;
-  padding: 0 0.2em;
+  justify-content: center;
   text-align: center;
-  width: 3em;
-  position: relative;
-  right: 5vh;
+  padding: 1vh;
 }
 
 .star-rating input {
@@ -632,10 +614,20 @@ body {
 
 .logoborrarcita {
   width: 5vh;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+.logoborrarcita:hover {
+  transform: scale(1.1);
+}
+.logoeditarcita {
+  width: 5vh;
   height: 5vh;
-  position: absolute;
-  left: 50%;
-  top: 1vh;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+.logoeditarcita:hover {
+  transform: scale(1.1);
 }
 
 #ventana-editarcita {
@@ -684,36 +676,6 @@ body {
   margin-inline: 20vh;
   align-items: right;
   margin-top: -1vh;
-}
-
-.star-rating {
-  display: flex;
-  flex-direction: row-reverse;
-  font-size: 2.5vh;
-  justify-content: space-around;
-  padding: 0 0.2em;
-  text-align: center;
-  width: 3em;
-  position: relative;
-  right: 5vh;
-}
-
-.star-rating input {
-  display: none;
-}
-
-.star-rating label {
-  color: #ccc;
-  cursor: pointer;
-}
-
-.star-rating :checked ~ label {
-  color: #f90;
-}
-
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: #fc0;
 }
 
 #ventana-eps {

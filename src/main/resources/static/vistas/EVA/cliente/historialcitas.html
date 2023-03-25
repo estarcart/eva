@@ -45,10 +45,9 @@
         <div class="barra"></div>
       </div>
 
-      <div id="textomiscitas" class="negrilla">Mis citas</div><br>
-
-      <div class="la_tabla">
-        <table>
+      <div id="textomiscitas">Mis citas</div>
+        <div class="tabla">
+        <table class="la_tabla">
           <thead>
             <tr>
               <th>TIPO</th>
@@ -58,19 +57,20 @@
             </tr>
           </thead>
           <tbody>
-           
-           
             <tr th:each="cita: ${citas}">
               <td th:text="${cita.tipo}"></td>
               <td th:text="${cita.doctor}"></td>
               <td th:text="{cita.hora}"></td>
-              <td><img class="logoborrarcita" src="/imagenes/Simboloborrarcita.png"/><img class="logoeditarcita" src="/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" /></td>
+              <td class="action-buttons">
+                <img class="logoborrarcita" src="/imagenes/Simboloborrarcita.png"/>
+                <img class="logoeditarcita" src="/imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" />
+              </td>
             </tr>
             <tr th:each="cita: ${citas}">
               <td th:text="${cita.tipo}"></td>
               <td th:text="${cita.doctor}"></td>
               <td th:text="{cita.hora}"></td>
-              <td class="tdtablahcitas">
+              <td>
                 <div class="star-rating">
                   <input type="radio" id="5-stars" name="rating" value="5" />
                   <label for="5-stars" class="star">&#9733;</label>
@@ -87,8 +87,6 @@
                   <input type="radio" id="1-star" name="rating" value="1" />
                   <label for="1-star" class="star">&#9733;</label>
                 </div>
-
-
               </td>
             </tr>
           </tbody>
