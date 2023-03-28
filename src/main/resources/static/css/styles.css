@@ -735,5 +735,17 @@ body {
   border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
 
+.lupita img{
+  background-color: #ffaafc;
+  width: 3vh;
+  border-radius: 1vh;
+}
+
+.lupita {
+   background-color: #ffaafc;
+   border: none;
+   border-radius: 1vh;
+   width: 3vh;
+
 
 
