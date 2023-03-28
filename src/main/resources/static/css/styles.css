@@ -745,7 +745,24 @@ body {
    background-color: #ffaafc;
    border: none;
    border-radius: 1vh;
-   width: 3vh;
+   width: 3vh;}
+
+.boton_generar_informe{
+   background-color: #ffaafc;
+   border: 1px solid #ffaafc;
+   border-radius: 1vh;
+   width: 26vh;
+   height: 5vh;
+   position: relative;
+   left: 40vh;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.boton_generar_informe:hover {
+   transform: scale(1.1);
+   color: white;
+   }
 
 
 
