@@ -203,3 +203,41 @@ tabla html:
         </form>
 
 
+        <div id="container-dark">
+                <div class="toggle"></div>
+              </div>
+
+
+          #container-dark{
+              background-color: white;
+              position:relative;
+              width: 11.11vh;
+              height:  5.59vh;
+              box-shadow: inset 4px 4px 6px,
+                          inset -4px -4px 6px #fff;
+              margin-top: 5vh;
+              border-radius: 3.49vh;
+              cursor: pointer;
+          }
+          .toggle{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width:  5.59vh;
+              height: 5.59vh;
+              transform: scale(.7);
+              background-color: linear-gradient(145deg, #D8D8D8, #FFFFFF);
+              border-radius: 3.49vh;
+              box-shadow: 3px 3px 8px #c4c4c4,
+                          -3px -3px 8px #fff;
+          }
+
+          #container-dark.active .toggle{
+              left: 5.591vh;
+          }
+
+          body.active{
+              background-color: rgb(23,23,23);
+          }
+
+

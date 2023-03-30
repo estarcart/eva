@@ -92,34 +92,51 @@
           </tbody>
         </table>
       </div>
-      <div id="ventana-editarcita">
-        <table>
-          
-          <tbody>
+      <div id="ventana-editarcita" class="tabla">
+          <table class="la_tablapopup">
+            <thead>
+            <tr>
+              <th>TIPO</th>
+              <th>DOCTOR</th>
+              <th>HORA</th>
+              <th>OPCION</th>
+            </tr>
+            </thead>
+            <tbody>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas"><button class="botoncitas">RESERVAR</button></td>
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td class="action-buttons">
+                <button
+                        class="botoncitas"
+                        onclick="mostrarVentanaEmergenteEPS()"
+                >
+                  RESERVAR
+                </button>
+              </td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas"><button class="botoncitas">RESERVAR</button></td>
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td class="action-button">
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
+              </td>
             </tr>
             <tr th:each="cita: ${citas}">
-              <td class="tdtablacitas" th:text="${cita.tipo}"></td>
-              <td class="tdtablacitas" th:text="${cita.doctor}"></td>
-              <td class="tdtablacitas" th:text="{cita.hora}"></td>
-              <td class="tdtablacitas"><button class="botoncitas">RESERVAR</button></td>
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td class="action-buttons">
+                <button class="botoncitas">RESERVAR</button>
+              </td>
             </tr>
-          </tbody>
-        </table>
+            </tbody>
+          </table>
         <div id="textoemergente" class="negrilla">Modifique el horario de su cita:</div>
-              
         <img class="logoX" src="/imagenes/LogoX.png" onclick="ocultarVentanaEmergenteCitas()"><img>
-     </div>
+        </div>
     </section>
   </body>
 </html>
