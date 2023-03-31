@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/estarcart/eva/tree/prueba#readme",
   "devDependencies": {
-    "electron": "^23.2.0"
+    "electron": "^23.2.1"
   }
 }

@@ -55,4 +55,5 @@ Thumbs.db
 # Maven
 .mvn/
 
-
+package-lock.json
+package.json
