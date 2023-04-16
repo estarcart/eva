@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script>
-    function mostrarFechaActual() {
-      let fecha = new Date(); // Obtiene la fecha actual
-      let dia = fecha.getDate(); // Obtiene el día del mes (1-31)
-      let mes = fecha.getMonth() + 1; // Obtiene el mes (0-11, por lo que se le suma 1)
-      let anio = fecha.getFullYear(); // Obtiene el año (ej: 2022)
-      let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
-      document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
-    }
-  </script>
+<script >
+  function mostrarFechaActual() {
+    let fecha = new Date(); // Obtiene la fecha actual
+    let dia = fecha.getDate(); // Obtiene el día del mes (1-31)
+    let mes = fecha.getMonth() + 1; // Obtiene el mes (0-11, por lo que se le suma 1)
+    let anio = fecha.getFullYear(); // Obtiene el año (ej: 2022)
+    let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
+    document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
+  }
+
+  function mostrarVentanaEmergenteEPS() {
+    var ventanaEmergente = document.getElementById("ventana-eps");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteEPS() {
+    var ventanaEmergente = document.getElementById("ventana-eps");
+    ventanaEmergente.style.display = "none";
+  }
+  function mostrarVentanaEmergenteBaby() {
+    var ventanaEmergente = document.getElementById("ventana-baby");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteBaby() {
+    var ventanaEmergente = document.getElementById("ventana-baby");
+    ventanaEmergente.style.display = "none";
+  }
+</script>
 
   <head>
     <meta charset="UTF-8" />
@@ -44,29 +63,46 @@
       </div>
       <div id="fecha-div"></div>
 
-      <div class="table">
-        <table>
+      <div class="tabla">
+        <table class="la_tabla">
           <thead>
-            <tr>
-              <th>TIPO</th>
-              <th>DOCTOR</th>
-              <th>HORA</th>
-              <th>OPCION</th>
-            </tr>
+          <tr>
+            <th>TIPO</th>
+            <th>DOCTOR</th>
+            <th>HORA</th>
+            <th>OPCION</th>
+          </tr>
           </thead>
           <tbody>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td><button>RESERVAR</button></td>
-            </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td><button>RESERVAR</button></td>
-            </tr>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-buttons">
+              <button
+                      class="botoncitas"
+                      onclick="mostrarVentanaEmergenteEPS()"
+              >
+                RESERVAR
+              </button>
+            </td>
+          </tr>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-button">
+              <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
+            </td>
+          </tr>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-buttons">
+              <button class="botoncitas">RESERVAR</button>
+            </td>
+          </tr>
           </tbody>
         </table>
       </div>
