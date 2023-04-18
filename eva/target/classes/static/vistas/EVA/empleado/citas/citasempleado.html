@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function mostrarFechaActual() {
+      let fecha = new Date(); // Obtiene la fecha actual
+      let dia = fecha.getDate(); // Obtiene el día del mes (1-31)
+      let mes = fecha.getMonth() + 1; // Obtiene el mes (0-11, por lo que se le suma 1)
+      let anio = fecha.getFullYear(); // Obtiene el año (ej: 2022)
+      let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
+      document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
+    }
+  </script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body onload="mostrarFechaActual();">
+    <section class="homecitas">
+      <div class="textobarra">
+        <img
+          class="logobarra"
+          src="/imagenes/logo-eva.png"
+          alt="logo-eva"
+        />
+        <a href="/vistas/EVA/empleado/citas/citasempleado.html">
+          <h1 class="negrilla">Gestionar Citas</h1>
+        </a>
+        <a href="/vistas/EVA/empleado/inventario/inventario.html">
+          <h1>Inventario</h1>
+        </a>
+        <a href="/vistas/EVA/empleado/ventas/registro_venta.html">
+          <h1>Ventas</h1>
+          <br /><br /><br />
+        </a>
+        <a href="/index.html">
+          <h1>Cerrar sesión</h1>
+        </a>
+        <div class="barra"></div>
+      </div>
+      <div id="fecha-div"></div>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>TIPO</th>
+              <th>DOCTOR</th>
+              <th>HORA</th>
+              <th>OPCION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr th:each="cita: ${citas}">
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td><button>RESERVAR</button></td>
+            </tr>
+            <tr th:each="cita: ${citas}">
+              <td th:text="${cita.tipo}"></td>
+              <td th:text="${cita.doctor}"></td>
+              <td th:text="{cita.hora}"></td>
+              <td><button>RESERVAR</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

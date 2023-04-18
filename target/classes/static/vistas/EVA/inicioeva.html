@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <section class="homeop">
+      <div>
+        <img
+          class="logoinicio1"
+          src="/imagenes/logo-eva.png"
+          alt="logo-eva"
+        />
+      </div>
+      <div>
+        <h1>Inicia sesión como:</h1>
+      </div>
+      <div class="textoinicio">
+        <a href="/vistas/EVA/cliente/iniciocliente.html">
+          <h1>Cliente</h1>
+        </a>
+        <a href="/vistas/EVA/empleado/inicioempleado.html">
+          <h1>Empleado</h1>
+        </a>
+      </div>
+      
+
+      <div class="redes">
+        <a href="#">
+          <img
+            class="wp"
+            src="/imagenes/LogoWPP.png"
+            alt="logo-wpp"
+          />
+        </a>
+        <a href="#">
+          <img class="fb" src="/imagenes/LogoFB.png" alt="logo-fb" />
+        </a>
+        <a href="#">
+          <img class="ig" src="/imagenes/LogoIG.png" alt="logo-ig" />
+        </a>
+      </div>
+      <div class="formcontacto">
+        <form action="#" method="post" class="formulario-inicioeva">
+          <fieldset class="fieldseteva">
+            <legend class="legendeva">Contáctanos</legend>
+
+            <label for="name" class="labeleva">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="surname" class="labeleva">Apellidos:</label>
+            <input type="text" id="surname" name="surname" required />
+
+            <label for="email" class="labeleva">Correo electrónico:</label>
+            <input class="formulario-email"  type="email" id="email" name="email" required />
+
+            <label for="question" class="labeleva">Pregunta:</label>
+            <textarea
+              class="textopregunta"
+              id="question"
+              name="question"
+              required
+            ></textarea>
+
+            <input class="botoneva" type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

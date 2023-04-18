@@ -1,0 +1,739 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+
+body {
+  /*cuerpo de la pagina*/
+  font-size: 1.5vh;
+  line-height: 1.5;
+  color: #333;
+  background-color: #9e71ff;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.home {
+  /*home de inicio.html*/
+  display: flex;
+  justify-content: center;
+}
+
+.homeop {
+  /*home de Inicioeva.html*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.homecitas {
+  /*home de agendarcita.html*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.barra {
+  display: flex;
+  border-left: 0.6vh solid #ffd600;
+  height: 90vh;
+  border-top-left-radius: 0.2vh;
+  border-bottom-left-radius: 0.2vh;
+  border-top-right-radius: 0.2vh;
+  border-bottom-right-radius: 0.2vh;
+  width: 1vh;
+  margin-left: 60vh;
+  margin-top: -40vh;
+}
+
+.barraadmin {
+  display: flex;
+  border-left: 0.6vh solid #ffd600;
+  height: 90vh;
+  border-top-left-radius: 0.2vh;
+  border-bottom-left-radius: 0.2vh;
+  border-top-right-radius: 0.2vh;
+  border-bottom-right-radius: 0.2vh;
+  width: 1vh;
+  margin-left: 60vh;
+  margin-top: -45vh;
+}
+
+.logobarra {
+  /*logo de EVA para la barra lateral*/
+  width: 45vh;
+}
+
+.textobarra {
+  width: 25vh;
+  display: flex;
+  margin-inline: 20vh;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -1vh;
+}
+
+.textobarra a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.textobarra a:hover {
+  display: flex;
+  text-decoration: none;
+  color: #ffd600;
+}
+
+.negrilla {
+  font-weight: bold;
+}
+
+.inicioOp {
+  /*div de los logos de inicio.html*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+}
+
+.logoinicio {
+  /*logo de EVA*/
+  width: 60vh;
+  transition: transform 0.5s ease;
+}
+
+.logoinicio:hover {
+  /*animación que al ponerle el mouse encima se agranda el logo de EVA*/
+  transform: scale(1.1);
+}
+.logoinicio1 {
+  /*logo de EVA sin animación*/
+  width: 60vh;
+}
+
+.textoinicio {
+  display: flex;
+  margin: 2vh;
+}
+
+.textoinicio a {
+  display: flex;
+  margin-inline: 10vh;
+  text-decoration: none;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+.textoinicio a:hover {
+  display: flex;
+  margin-inline: 10vh;
+  text-decoration: none;
+  color: #ffd600;
+}
+
+.redes {
+  display: flex;
+}
+/*logos de redes sociales*/
+.wp {
+  width: 4vh;
+  height: auto;
+}
+.fb {
+  width: 4vh;
+  height: auto;
+}
+.ig {
+  width: 4vh;
+  height: auto;
+}
+
+.botoncitas {
+  font-weight: bold;
+  background-color: #ffaafc;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 1vh;
+  text-decoration: none;
+  font-size: 1.6vh;
+  margin: 1vh;
+  cursor: pointer;
+  border-radius: 1vh;
+}
+
+#fecha-div {
+  font-size: 3vh;
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 82.5vh;
+  width: 70vh;
+  display: flex;
+  margin-top: -1vh;
+}
+
+#textomiscitas {
+  font-size: 3vh;
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  left: 62vh;
+  width: 28vh;
+  display: flex;
+  margin-inline: 20vh;
+  align-items: right;
+  margin-top: -1vh;
+}
+
+.inicio_empleado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inicio_empleado legend {
+  font-size: 3vh;
+  margin: 1vh;
+  letter-spacing: 0.15em;
+  font-weight: 400;
+}
+
+.inicio_empleado input {
+  background-color: white;
+  padding: 1vh;
+  width: 40vh;
+  height: 3vh;
+  margin: 1vh;
+  border-radius: 0.8vh;
+  border: 1px solid white;
+  font-size: 2.5vh;
+  font-weight: 300;
+}
+
+.inicio_empleado button {
+  margin: 3vh;
+  background-color: #9e71ff;
+  border: 1px solid #9e71ff;
+  font-size: 2.5vh;
+  font-weight: 400;
+  line-height: 0.15em;
+  color: white;
+}
+
+.inicio_empleado button:hover {
+  color: #ffd600;
+  cursor: pointer;
+}
+
+.ventas {
+  /*clase del div que contiene los textos y los imput*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.ventas h1 {
+  font-size: 2.5vh;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 55vh;
+  justify-content: flex-start;
+}
+
+.ventasformulario {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 2vh;
+  width: 100vh;
+  height: 50vh;
+  font-size: 1.8vh;
+}
+
+.ventasformulario label {
+  font-weight: 600;
+}
+
+.ventas button {
+  padding: 1vh;
+  display: flex;
+  border-radius: 0.8vh;
+  border: 1px solid #ffaafc;
+  background-color: #ffaafc;
+  font-weight: 700;
+  margin: 1vh;
+}
+
+.legend_venta {
+  font-size: 2vh;
+  margin-bottom: 2vh;
+  font-weight: 500;
+  background-color: #b795ff;
+  padding: 1vh;
+  border-radius: 0.8vh;
+  width: 51vh;
+  color: black;
+  padding-left: 2vh;
+}
+
+.input_venta {
+  background-color: white;
+  padding: 1vh;
+  width: 50vh;
+  margin: 1vh;
+  border-radius: 0.8vh;
+  border: 1px solid white;
+}
+
+.formcontacto {
+  width: 30vh;
+  height: 40vh;
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-left: 160vh;
+  margin-right: 10vh;
+  margin-top: -40vh;
+}
+
+.fieldseteva {
+  border: 1px solid #ffffff;
+  padding: 1vh;
+  margin-bottom: 2.7vh;
+  padding-left: 3vh;
+}
+
+.legendeva {
+  margin-inline: 5vh;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1.3vh;
+}
+.labeleva {
+  font-size: 8px;
+  color: #333;
+  width: 13.9vh;
+  margin-right: 1.3vh;
+  font-weight: bold;
+}
+
+.formulario-inicioeva input[type="text"],
+.formulario-email,
+.textopregunta {
+  font-size: 8px;
+  width: 41.9vh;
+  padding: 0.6vh;
+  border: 1px solid #ccc;
+  border-radius: 0.6vh;
+  margin-bottom: -5vh;
+  max-width: 23vh;
+  background-color: #d9d9d9;
+}
+
+.textopregunta {
+  height: 10vh;
+}
+
+.botoneva[type="submit"] {
+  padding: 0.6vh 2vh;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: bold;
+  margin-inline: 7vh;
+  margin-top: 5vh;
+}
+
+.botoneva:hover[type="submit"]:hover {
+  background-color: #ffaafc;
+  color: #ffffff;
+}
+
+.politica {
+  display: flex;
+  position: relative;
+  top: 95vh;
+  left: -120vh;
+  font-size: 2vh;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input[type="text"] {
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.action-buttons {
+  display: flex;
+  justify-content: center;
+}
+.action-button {
+  display: flex;
+  justify-content: center;
+}
+
+.la_tabla {
+  width: 100vh;
+  border-collapse: collapse;
+  margin: 2vh;
+  color: black;
+  text-align: center;
+  background-color: white;
+  overflow: auto;
+  max-height: 80vh;
+
+}
+
+.la_tabla thead {
+  background-color: #711af3;
+  border-bottom: 1vh solid #9e71ff;
+}
+
+.la_tabla td {
+  font-weight: 500;
+  font-size: 1.8vh;
+}
+
+.la_tabla th {
+  color: #fff;
+  font-size: 2.5vh;
+  line-height: 6vh;
+  font-weight: 500;
+}
+
+.la_tabla tr{
+
+}
+
+.la_tabla tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.tabla h1 {
+  padding-bottom: 3vh;
+  font-weight: 600;
+  font-size: 3vh;
+  line-height: 3vh;
+  color: #fff;
+  justify-content: left;
+}
+
+.tablabtn {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100vh;
+}
+
+.tablabtn button {
+  font-size: 2.5vh;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.tablabtn button:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.btnagregar {
+  background-color: #ffaafc;
+  border: 1px solid #ffaafc;
+  border-radius: 1.5vh;
+  width: 15vh;
+  height: 5vh;
+}
+
+.btnhistorial {
+  background-color: #d458ff;
+  border: 1px solid #d458ff;
+  border-radius: 1vh;
+  width: 15vh;
+  height: 5vh;
+}
+
+.img1div {
+  background-color: #d458ff;
+  border-radius: 1vh;
+  display: flex;
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.img1div:hover {
+  transform: scale(1.1);
+}
+
+.img2div {
+  background-color: #a107ff;
+  border-radius: 1vh;
+  display: flex;
+  width: 5vh;
+  height: 5vh;
+  text-align: center;
+  margin: 1vh;
+  cursor: pointer;
+}
+
+.img2div:hover {
+  transform: scale(1.1);
+}
+
+.img3 {
+  background-color: #c7adff;
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+  right: 30vh;
+  border: 0px;
+}
+
+.tabla {
+  position: relative;
+  top: 10vh;
+}
+
+#ventana-editarcita {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  background-color: #9e71ff;
+  opacity: 0.9;
+  transition: opacity 1s ease;
+  padding: 2.79vh;
+  border: 1px solid #883ff6;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+  width: 70vh;
+  height: 40vh;
+}
+
+#ventana-editarcita div.tablacitas {
+  font-size: 1.6vh;
+  overflow: auto;
+  max-height: 80vh;
+  position: absolute;
+  left: 10vh;
+  top: 10vh;
+  border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+  width: 100vh; /* ancho de la tabla */
+}
+
+.logoX {
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+}
+#textoemergente {
+  font-size: 2vh;
+  display: flex;
+  position: absolute;
+  top: 1.2vh;
+  left: -16vh;
+  width: 40vh;
+  display: flex;
+  margin-inline: 20vh;
+  align-items: right;
+  margin-top: -1vh;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2.5vh;
+  justify-content: center;
+  text-align: center;
+  padding: 1vh;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating :checked ~ label {
+  color: #f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}
+
+.logoborrarcita {
+  width: 5vh;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+.logoborrarcita:hover {
+  transform: scale(1.1);
+}
+.logoeditarcita {
+  width: 5vh;
+  height: 5vh;
+  padding: 0.5vh;
+  cursor: pointer;
+}
+.logoeditarcita:hover {
+  transform: scale(1.1);
+}
+
+#ventana-editarcita {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  background-color: #9e71ff;
+  opacity: 0.9;
+  transition: opacity 1s ease;
+  padding: 2.79vh;
+  border: 1px solid #883ff6;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+  width: 70vh;
+  height: 40vh;
+}
+
+#ventana-editarcita div.tablacitas {
+  font-size: 1.6vh;
+  overflow: auto;
+  max-height: 80vh;
+  position: absolute;
+  left: 10vh;
+  top: 10vh;
+  border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+  width: 100vh; /* ancho de la tabla */
+}
+
+.logoX {
+  width: 4vh;
+  height: 4vh;
+  position: absolute;
+  right: 1vh;
+  top: 0.1vh;
+  cursor: pointer;
+}
+#textoemergente {
+  font-size: 2vh;
+  display: flex;
+  position: absolute;
+  top: 1.2vh;
+  left: -16vh;
+  width: 40vh;
+  display: flex;
+  margin-inline: 20vh;
+  align-items: right;
+  margin-top: -1vh;
+}
+
+#ventana-eps {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  background-color: #9e71ff;
+  opacity: 0.9;
+  transition: opacity 1s ease;
+  padding: 2.79vh;
+  border: 1px solid #883ff6;
+  border-radius: 10px;
+  display: none;
+  z-index: 9999;
+  width: 40vh;
+  height: 15vh;
+}
+
+.divseleccioneps {
+  position: relative;
+  top: 5vh;
+  left: 1vh;
+}
+
+.botoneps {
+  font-size: 2vh;
+  position: relative;
+  left: 15vh;
+  top: 5vh;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.tablahcitas {
+  font-size: 1.6vh;
+  overflow: auto;
+  max-height: 80vh;
+  display: flex;
+  position: relative;
+  left: 10vh;
+  top: 10vh;
+  border-collapse: collapse; /* para que los bordes de las celdas se fusionen */
+  width: 100vh; /* ancho de la tabla */
+}
+
+.tdtablahcitas {
+  position: relative;
+  border-radius: 3vh;
+  width: 7vh;
+  height: 4vh;
+  background-color: #f8f1f1;
+  color: #333;
+  padding-left: 10vh; /* espaciado interno de las celdas */
+  text-align: center;
+  border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
+}
+
+
+
