@@ -43,27 +43,11 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr th:each="pagos: ${pago}">
+                <td th:text="{pago.nombre}"></td>
+                <td th:text="{pago.cantidad}"></td>
+                <td th:text="{pago.total}"></td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
             </tbody>
         </table>
     </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,7 +43,7 @@
           </button>
           <button class="btnhistorial">HISTORIAL</button>
         </div>
-        <table class="la_tabla">
+        <table class="la_tabla" id="inventario" >
           <thead>
             <tr>
               <th>NOMBRE</th>
@@ -53,11 +54,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Camiseta</td>
-              <td>1111</td>
-              <td>10</td>
-              <td>$20.00</td>
+            <tr th:each="producto: ${producto}">
+              <td th:text="${producto.nombre}"></td>
+              <td th:text="${producto.codigo}"></td>
+              <td th:text="${producto.cantidad}"></td>
+              <td th:text="${producto.precio}"></td>
               <td class="action-buttons">
                 <div class="img1div">
                   <img
@@ -70,65 +71,15 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>Pantalón</td>
-              <td>1111</td>
-              <td>5</td>
-              <td>$40.00</td>
-              <td class="action-buttons">
-                <div class="img1div">
-                  <img
-                    src="../../../../../imagenes/PencilSimple.png"
-                    alt="Editar"
-                  />
-                </div>
-                <div class="img2div">
-                  <img src="../../../../../imagenes/Trash.png" alt="Eliminar" />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Zapatos</td>
-              <td>111</td>
-              <td>15</td>
-              <td>$60.00</td>
-              <td class="action-buttons">
-                <div class="img1div">
-                  <img
-                    src="../../../../../imagenes/PencilSimple.png"
-                    alt="Editar"
-                  />
-                </div>
-                <div class="img2div">
-                  <img src="../../../../../imagenes/Trash.png" alt="Eliminar" />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Camiseta</td>
-              <td>1111</td>
-              <td>10</td>
-              <td>$20.00</td>
-              <td class="action-buttons">
-                <div class="img1div">
-                  <img
-                          src="../../../../../imagenes/PencilSimple.png"
-                          alt="Editar"
-                  />
-                </div>
-                <div class="img2div">
-                  <img src="../../../../../imagenes/Trash.png" alt="Eliminar" />
-                </div>
-              </td>
-            </tr>
-
 
           </tbody>
         </table>
-        <button class="boton_generar_informe">GENERAR INFORME</button>
+        <button class="boton_generar_informe" id="btn_informe" value="Generar PDF">GENERAR INFORME</button>
       </div>
 
       </div>
     </section>
+
+
   </body>
 </html>

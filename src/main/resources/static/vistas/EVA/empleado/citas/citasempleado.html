@@ -87,24 +87,35 @@
               </button>
             </td>
           </tr>
-          <tr th:each="cita: ${citas}">
-            <td th:text="${cita.tipo}"></td>
-            <td th:text="${cita.doctor}"></td>
-            <td th:text="{cita.hora}"></td>
-            <td class="action-button">
-              <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
-            </td>
-          </tr>
-          <tr th:each="cita: ${citas}">
-            <td th:text="${cita.tipo}"></td>
-            <td th:text="${cita.doctor}"></td>
-            <td th:text="{cita.hora}"></td>
-            <td class="action-buttons">
-              <button class="botoncitas">RESERVAR</button>
-            </td>
-          </tr>
+
           </tbody>
         </table>
+      </div>
+      <div id="ventana-eps">
+        <div id="textoemergente" class="negrilla">
+          Responda la siguiente pregunta:<br />
+          ¿Pertenece a una EPS?
+        </div>
+
+        <img
+                class="logoX"
+                src="../../../../imagenes/LogoX.png"
+                onclick="ocultarVentanaEmergenteEPS()"
+        /><img />
+        <div class="divseleccioneps">
+          <form action="#" method="POST">
+            <label for="seleccionepsSI">
+              <input type="radio" name="opcion" value="si" id="selectsi" required />
+              <span>Sí</span>
+            </label>
+            <label for="seleccionepsNO">
+              <input type="radio" name="opcion" value="no"  id="selectno"required />
+              <span>No</span>
+            </label>
+            <button class="botoneps" type="submit">RESERVAR</button>
+          </form>
+        </div>
+        <div id="fondonegro"></div>
       </div>
     </section>
   </body>

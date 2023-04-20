@@ -51,14 +51,13 @@
           </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>Daniela Arenas</td>
-            <td>daniela.arenas.2021@upb.edu.co</td>
-
+          <tr th:each="user: ${users}">
+            <td th:text="${user.nombre}"></td>
+            <td th:text="${user.correo}"></td>
 
             <td class="action-buttons">
               <div class="img1div">
-                <img
+                <img id="editaruser"
                         src="../../imagenes/PencilSimple.png"
                         alt="Editar"
                 />
@@ -68,40 +67,8 @@
               </div>
             </td>
           </tr>
-          <tr>
-            <td>Valentina Peñuela</td>
-            <td>valentina.peñuela.2021@upb.edu.co</td>
 
 
-            <td class="action-buttons">
-              <div class="img1div">
-                <img
-                        src="../../imagenes/PencilSimple.png"
-                        alt="Editar"
-                />
-              </div>
-              <div class="img2div">
-                <img src="../../imagenes/Trash.png" alt="Eliminar" />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Daniel Valdivieso</td>
-            <td>daniel.valdivieso.2021@upb.edu.co</td>
-
-
-            <td class="action-buttons">
-              <div class="img1div">
-                <img
-                        src="../../imagenes/PencilSimple.png"
-                        alt="Editar"
-                />
-              </div>
-              <div class="img2div">
-                <img src="../../imagenes/Trash.png" alt="Eliminar" />
-              </div>
-            </td>
-          </tr>
           </tbody>
         </table>
 

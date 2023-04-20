@@ -57,19 +57,19 @@
             </tr>
           </thead>
           <tbody>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
+            <tr th:each="citah: ${citash}">
+              <td th:text="${citah.tipo}"></td>
+              <td th:text="${citah.doctor}"></td>
+              <td th:text="{citah.hora}"></td>
               <td class="action-buttons">
                 <img class="logoborrarcita" src="../../../imagenes/Simboloborrarcita.png"/>
                 <img class="logoeditarcita" src="../../../imagenes/Simboloeditarcita.png" onclick="mostrarVentanaEmergenteCitas()" />
               </td>
             </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
+            <tr th:each="citah1: ${citash1}">
+              <td th:text="${citah1.tipo}"></td>
+              <td th:text="${citah1.doctor}"></td>
+              <td th:text="{citah1.hora}"></td>
               <td>
                 <div class="star-rating">
                   <input type="radio" id="5-stars" name="rating" value="5" />
