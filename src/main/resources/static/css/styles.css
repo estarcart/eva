@@ -291,6 +291,7 @@ body {
   background-color: #ffaafc;
   font-weight: 700;
   margin: 1vh;
+
 }
 
 .legend_venta {
@@ -312,6 +313,11 @@ body {
   margin: 1vh;
   border-radius: 0.8vh;
   border: 1px solid white;
+}
+
+.boton_venta{
+display: flex;
+padding-left: 6vh;
 }
 
 .formcontacto {
@@ -418,6 +424,7 @@ body {
 
 .la_tabla {
   width: 100vh;
+  height: 25vh;
   border-collapse: collapse;
   margin-top: 2vh;
   color: black;
@@ -504,8 +511,19 @@ body {
 .tablabtn {
   display: flex;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: left;
+  padding: 2vh;
   width: 100vh;
+}
+.btn_informe{
+  background-color: #d458ff;
+  border: 1px solid #d458ff;
+  border-radius: 1vh;
+  width: 26vh;
+  height: 5vh;
+  position: relative;
+  left: 4vh;
+
 }
 
 .tablabtn button {
@@ -533,6 +551,7 @@ body {
   border-radius: 1vh;
   width: 15vh;
   height: 5vh;
+
 }
 
 .img1div {
@@ -574,7 +593,7 @@ body {
   width: 5vh;
   height: 5vh;
   position: relative;
-  right: 30vh;
+  right: -0.8vh;
   border: 0px;
 }
 
@@ -796,6 +815,7 @@ body {
   border-bottom: 0.13vh solid #ddd; /* borde inferior de las celdas */
 }
 
+<<<<<<< Updated upstream
 .lupita img{
   width: 4vh;
 }
@@ -858,4 +878,35 @@ body {
 
 
 
+=======
+.boton_generar_informe{
+  background-color: #ffaafc;
+  border: 1px solid #ffaafc;
+  border-radius: 1vh;
+  width: 26vh;
+  height: 5vh;
+  position: relative;
+  left: 40vh;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.boton_generar_informe:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.lupita img{
+  background-color: #ffaafc;
+  width: 3vh;
+  border-radius: 1vh;
+}
+
+.lupita {
+    background-color: #ffaafc;
+    border: none;
+    border-radius: 1vh;
+
+}
+>>>>>>> Stashed changes
 
