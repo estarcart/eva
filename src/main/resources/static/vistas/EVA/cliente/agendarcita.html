@@ -86,20 +86,44 @@
                 </button>
               </td>
             </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
+            <tr th:each="cita1: ${citas1}">
+              <td th:text="${cita1.tipo}"></td>
+              <td th:text="${cita1.doctor}"></td>
+              <td th:text="{cita1.hora}"></td>
               <td class="action-button">
-                <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteEPS">RESERVAR</button>
               </td>
             </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
+            <tr th:each="cita2: ${citas2}">
+              <td th:text="${cita2.tipo}"></td>
+              <td th:text="${cita2.doctor}"></td>
+              <td th:text="{cita2.hora}"></td>
               <td class="action-buttons">
-                <button class="botoncitas">RESERVAR</button>
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteEPS" >RESERVAR</button>
+              </td>
+            </tr>
+            <tr th:each="cita3: ${citas3}">
+              <td th:text="${cita3.tipo}"></td>
+              <td th:text="${cita3.doctor}"></td>
+              <td th:text="{cita3.hora}"></td>
+              <td class="action-buttons">
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteEPS" >RESERVAR</button>
+              </td>
+            </tr>
+            <tr th:each="cita4: ${citas4}">
+              <td th:text="${cita4.tipo}"></td>
+              <td th:text="${cita4.doctor}"></td>
+              <td th:text="{cita4.hora}"></td>
+              <td class="action-buttons">
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteEPS" >RESERVAR</button>
+              </td>
+            </tr>
+            <tr th:each="cita5: ${citas5}">
+              <td th:text="${cita5.tipo}"></td>
+              <td th:text="${cita5.doctor}"></td>
+              <td th:text="{cita5.hora}"></td>
+              <td class="action-buttons">
+                <button class="botoncitas" onclick="mostrarVentanaEmergenteEPS" >RESERVAR</button>
               </td>
             </tr>
           </tbody>
@@ -118,12 +142,12 @@
         /><img />
         <div class="divseleccioneps">
           <form action="#" method="POST">
-            <label>
-              <input type="radio" name="opcion" value="si" required />
+            <label for="seleccionepsSI">
+              <input type="radio" name="opcion" value="si" id="selectsi" required />
               <span>Sí</span>
             </label>
-            <label>
-              <input type="radio" name="opcion" value="no" required />
+            <label for="seleccionepsNO">
+              <input type="radio" name="opcion" value="no"  id="selectno"required />
               <span>No</span>
             </label>
             <button class="botoneps" type="submit">RESERVAR</button>
