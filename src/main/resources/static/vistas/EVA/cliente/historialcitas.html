@@ -108,30 +108,13 @@
               <td th:text="${cita.doctor}"></td>
               <td th:text="{cita.hora}"></td>
               <td class="action-buttons">
-                <button
+                <button id="btn_editarcita"
                         class="botoncitas"
-                        onclick="mostrarVentanaEmergenteEPS()"
+
                 >
                   RESERVAR
                 </button>
               </td>
-            </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td class="action-button">
-                <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
-              </td>
-            </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td class="action-buttons">
-                <button class="botoncitas">RESERVAR</button>
-              </td>
-            </tr>
             </tbody>
           </table>
         <div id="textoemergente" class="negrilla">Modifique el horario de su cita:</div>
