@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="../../css/stylesbebe.css" />
+  </head>
+
+  <body>
+    <section class="homeop">
+      <div>
+        <img
+          class="logoinicio1"
+          src="../../imagenes/logo-eva-bebe.png"
+          alt="logo-eva"
+        />
+      </div>
+      <div>
+        <h1>Inicia sesión como:</h1>
+      </div>
+      <div class="textoinicio">
+        <a href="../../vistas/EVA-bebe/cliente/BEBE_iniciocliente.html">
+          <h1>Cliente</h1>
+        </a>
+        <a href="../../vistas/EVA-bebe/empleado/BEBE_inicioempleado.html">
+          <h1>Empleado</h1>
+        </a>
+      </div>
+
+      <div class="redes">
+        <a href="#">
+          <img
+            class="wp"
+            src="../../imagenes/LogoWPPN.png"
+            alt="logo-wpp"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="fb"
+            src="../../imagenes/LogoFBN.png"
+            alt="logo-fb"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="ig"
+            src="../../imagenes/LogoIGN.png"
+            alt="logo-ig"
+          />
+        </a>
+      </div>
+      <div class="formcontacto">
+        <form action="#" method="post" class="formulario-iniciobaby">
+          <fieldset class="fieldsetformbaby">
+            <legend class="legendbaby">Contáctanos</legend>
+
+            <label for="name" class="labelbaby">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="surname" class="labelbaby">Apellidos:</label>
+            <input type="text" id="surname" name="surname" required />
+
+            <label for="email" class="labelbaby">Correo electrónico:</label>
+            <input class="formulario-email" type="email" id="email" name="email" required />
+
+            <label for="question" class="labelbaby">Pregunta:</label>
+            <textarea
+              id="question"
+              name="question"
+              required
+              class="textopregunta"
+            ></textarea>
+
+            <input class="botonbaby" type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

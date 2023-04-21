@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="../../../../css/styles.css" />
+  </head>
+
+  <body>
+    <section class="homecitas">
+      <div class="textobarra">
+        <img
+          class="logobarra"
+          src="../../../../imagenes/logo-eva.png"
+          alt="logo-eva"
+        />
+        <a href="../citas/citasempleado.html">
+          <h1>Gestionar Citas</h1>
+        </a>
+        <a href="../inventario/inventario.html">
+          <h1>Inventario</h1>
+        </a>
+        <a href="../ventas/registro_venta.html">
+          <h1 class="negrilla">Ventas</h1>
+          <br /><br /><br />
+        </a>
+        <a href="../../../../index.html">
+          <h1>Cerrar sesión</h1>
+        </a>
+        <div class="barra"></div>
+      </div>
+
+      <div class="ventas">
+        <h1>Registrar una venta:</h1>
+        <form class="ventasformulario" id="formproduct" >
+          <legend class="legend_venta">Ingresa los datos pedidos:</legend>
+          <label for="nombre_producto">NOMBRE DEL PRODUCTO:</label>
+          <input
+            type="text"
+            id="nombre_producto"
+            name="nombre_producto"
+            class="input_venta"
+          />
+
+          <label for="cantidad_producto">CANTIDAD VENDIDA:</label>
+          <input
+            type="number"
+            id="cantidad_producto"
+            name="cantidad_producto"
+            class="input_venta"
+          />
+
+          <label for="total_producto">TOTAL:</label>
+          <input
+            type="text"
+            id="total_producto"
+            name="total_producto"
+            class="input_venta"
+          />
+
+          <button type="submit">REGISTRAR VENTA</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
+

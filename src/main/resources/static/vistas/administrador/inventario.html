@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+
+  <body>
+    <section class="homecitas">
+      <div class="textobarra">
+        <img
+          class="logobarra"
+          src="../../imagenes/logo-eva.png"
+          alt="logo-eva"
+        />
+        <a href="./adminusuarios.html">
+          <h1>Gestión de usuarios</h1>
+        </a>
+        <a href="./historialcitasadmin.html">
+          <h1>Historial de Citas</h1>
+        </a>
+        <a href="./historialventasadmin.html">
+          <h1>Ventas</h1>
+        </a>
+        <a href="./inventario.html">
+          <h1 class="negrilla">Inventario</h1>
+          <br /><br /><br />
+        </a>
+        <a href="../../index.html">
+          <h1>Cerrar sesión</h1>
+        </a>
+        <div class="barraadmin"></div>
+      </div>
+
+      <div class="tablaall">
+        <div class="tabla">
+          <h1>Inventario</h1>
+          <div class="tablabtn">
+            <button class="btnagregar">AGREGAR</button>
+            <button class="img3">
+              <img src="../../../../imagenes/recarga.png" alt="recarga" />
+            </button>
+            <button class="btnhistorial">HISTORIAL</button>
+          </div>
+          <table class="la_tabla">
+            <thead>
+            <tr>
+              <th>NOMBRE</th>
+              <th>CODIGO</th>
+              <th>CANTIDAD</th>
+              <th>PRECIO c/u</th>
+              <th>OPCION</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="producto: ${producto}">
+              <td th:text="${producto.nombre}"></td>
+              <td th:text="${producto.codigo}"></td>
+              <td th:text="${producto.cantidad}"></td>
+              <td th:text="${producto.precio}"></td>
+              <td class="action-buttons">
+                <div class="img1div">
+                  <img
+                          src="../../../../../imagenes/PencilSimple.png"
+                          alt="Editar"
+                  />
+                </div>
+                <div class="img2div">
+                  <img src="../../../../../imagenes/Trash.png" alt="Eliminar" />
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <button class="boton_generar_informe" id="btn_informe">GENERAR INFORME</button>
+        </div>
+
+      </div>
+
+    </section>
+  </body>
+</html>
