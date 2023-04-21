@@ -125,7 +125,7 @@
 
       <img
               class="logoX"
-              src="../../../imagenes/LogoX.png"
+              src="../../../../imagenes/LogoX.png"
               onclick="ocultarVentanaEmergenteEPS2()"
       /><img />
       <div class="divseleccioneps1">
@@ -149,6 +149,25 @@
 
   </div>
 </section>
+<script>
+  function mostrarVentanaEmergenteEPS1() {
+    var ventanaEmergente = document.getElementById("ventana-eps1");
+    ventanaEmergente.style.display = "block";
+  }
 
+  function ocultarVentanaEmergenteEPS1() {
+    var ventanaEmergente = document.getElementById("ventana-eps1");
+    ventanaEmergente.style.display = "none";
+  }
+
+  function mostrarVentanaEmergenteEPS2() {
+    var ventanaEmergente = document.getElementById("ventana-eps2");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteEPS2() {
+    var ventanaEmergente = document.getElementById("ventana-eps2");
+    ventanaEmergente.style.display = "none";
+</script>
 </body>
 </html>

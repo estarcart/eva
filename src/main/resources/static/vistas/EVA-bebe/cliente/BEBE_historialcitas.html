@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  function mostrarVentanaEmergenteCitas() {
+    var ventanaEmergente = document.getElementById("ventana-editarcita");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteCitas() {
+    var ventanaEmergente = document.getElementById("ventana-editarcita");
+    ventanaEmergente.style.display = "none";
+  }
+
+
+</script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,6 +34,9 @@
         </a>
         <a href="#">
           <h1 class="negrilla">Mis citas</h1>
+        </a>
+        <a href="/vistas/EVA-bebe/cliente/BEBE_historialdepagos.html">
+          <h1>Historial de pagos</h1>
           <br /><br /><br />
         </a>
         <a href="/index.html">
@@ -28,33 +44,97 @@
         </a>
         <div class="barra"></div>
       </div>
-      <div class="texto-citas">Mis citas</div>
-
-      <div class="table">
-        <table>
+      <div id="textomiscitas">Mis citas</div>
+      <div class="tabla">
+        <table class="la_tabla">
           <thead>
-            <tr>
-              <th>TIPO</th>
-              <th>DOCTOR</th>
-              <th>HORA</th>
-              <th>OPCION</th>
-            </tr>
+          <tr>
+            <th>TIPO</th>
+            <th>DOCTOR</th>
+            <th>HORA</th>
+            <th>OPCION</th>
+          </tr>
           </thead>
           <tbody>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td><button>RESERVAR</button></td>
-            </tr>
-            <tr th:each="cita: ${citas}">
-              <td th:text="${cita.tipo}"></td>
-              <td th:text="${cita.doctor}"></td>
-              <td th:text="{cita.hora}"></td>
-              <td><button>RESERVAR</button></td>
-            </tr>
+          <tr th:each="citah: ${citash}">
+            <td th:text="${citah.tipo}"></td>
+            <td th:text="${citah.doctor}"></td>
+            <td th:text="{citah.hora}"></td>
+            <td class="action-buttons">
+              <img class="logoborrarcita" src="../../../imagenes/SimboloborrarcitaBebe.png"/>
+              <img class="logoeditarcita" src="../../../imagenes/SimboloeditarcitaBebe.png" onclick="mostrarVentanaEmergenteCitas()" />
+            </td>
+          </tr>
+          <tr th:each="citah1: ${citash1}">
+            <td th:text="${citah1.tipo}"></td>
+            <td th:text="${citah1.doctor}"></td>
+            <td th:text="{citah1.hora}"></td>
+            <td>
+              <div class="star-rating">
+                <input type="radio" id="5-stars" name="rating" value="5" />
+                <label for="5-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="4-stars" name="rating" value="4" />
+                <label for="4-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="3-stars" name="rating" value="3" />
+                <label for="3-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="2-stars" name="rating" value="2" />
+                <label for="2-stars" class="star">&#9733;</label>
+
+                <input type="radio" id="1-star" name="rating" value="1" />
+                <label for="1-star" class="star">&#9733;</label>
+              </div>
+            </td>
+          </tr>
           </tbody>
         </table>
+      </div>
+      <div id="ventana-editarcita" class="tabla">
+        <table class="la_tablapopup">
+          <thead>
+          <tr>
+            <th>TIPO</th>
+            <th>DOCTOR</th>
+            <th>HORA</th>
+            <th>OPCION</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-buttons">
+              <button
+                      class="botoncitas"
+                      onclick="mostrarVentanaEmergenteEPS()"
+              >
+                RESERVAR
+              </button>
+            </td>
+          </tr>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-button">
+              <button class="botoncitas" onclick="mostrarVentanaEmergenteBaby">RESERVAR</button>
+            </td>
+          </tr>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-buttons">
+              <button class="botoncitas">RESERVAR</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <div id="textoemergente" class="negrilla">Modifique el horario de su cita:</div>
+        <img class="logoX" src="../../../imagenes/LogoX.png" onclick="ocultarVentanaEmergenteCitas()"><img>
       </div>
     </section>
   </body>

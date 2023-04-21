@@ -18,24 +18,26 @@
         />
       </div>
 
-      <div class="texto_inicio_empleado">
-        <h1>Inicia sesión como empleado:</h1>
-        <br />
+      <form method="post" action="#" class="inicio_empleado">
+        <legend>Inicia sesión como empleado:</legend>
         <input
-          class="boton_inicio_empleado"
-          type="text"
-          placeholder="  E-mail"
+                type="email"
+                id="email_empleado"
+                name="email_empleado"
+                class="input_login_empleado"
+                placeholder="E-mail"
         />
-        <br />
-        <input
-          class="boton_inicio_empleado"
-          type="text"
-          placeholder="  Contraseña"
-        />
-        <br />
 
-        <h1>Iniciar Sesión</h1>
-      </div>
+        <input
+                type="password"
+                id="password_empleado"
+                name="password_empleado"
+                class="input_login_empleado"
+                placeholder="Contraseña"
+        />
+
+        <button type="submit">Iniciar sesión</button>
+      </form>
     </section>
   </body>
 </html>
