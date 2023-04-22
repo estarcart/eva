@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8">
+<title>Inicio</title>
+</head>
+<body>
+	<div>
+		<h4>
+			Bienvenido <span sec:authentication="principal.username"></span>
+		</h4>
+
+		<br> <br>
+
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Email</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="usuario : ${usuarios}">
+					<td th:text="${usuario.id}">ID</td>
+					<td th:text="${usuario.nombre}">ID</td>
+					<td th:text="${usuario.apellido}">ID</td>
+					<td th:text="${usuario.email}">ID</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
