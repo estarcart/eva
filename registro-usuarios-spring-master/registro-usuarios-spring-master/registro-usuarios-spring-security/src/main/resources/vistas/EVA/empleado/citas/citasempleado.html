@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<script >
+  function mostrarFechaActual() {
+    let fecha = new Date(); // Obtiene la fecha actual
+    let dia = fecha.getDate(); // Obtiene el día del mes (1-31)
+    let mes = fecha.getMonth() + 1; // Obtiene el mes (0-11, por lo que se le suma 1)
+    let anio = fecha.getFullYear(); // Obtiene el año (ej: 2022)
+    let fechaActual = "Agendar cita dia: " + dia + "/" + mes + "/" + anio; // Crea la cadena de texto que muestra la fecha actual
+    document.getElementById("fecha-div").innerHTML = fechaActual; // Inserta la cadena de texto en el div
+  }
+
+  function mostrarVentanaEmergenteEPS() {
+    var ventanaEmergente = document.getElementById("ventana-eps");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteEPS() {
+    var ventanaEmergente = document.getElementById("ventana-eps");
+    ventanaEmergente.style.display = "none";
+  }
+  function mostrarVentanaEmergenteBaby() {
+    var ventanaEmergente = document.getElementById("ventana-baby");
+    ventanaEmergente.style.display = "block";
+  }
+
+  function ocultarVentanaEmergenteBaby() {
+    var ventanaEmergente = document.getElementById("ventana-baby");
+    ventanaEmergente.style.display = "none";
+  }
+</script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVA - Usuarios</title>
+    <link rel="stylesheet" href="../../../../css/styles.css" />
+  </head>
+
+  <body onload="mostrarFechaActual();">
+    <section class="homecitas">
+      <div class="textobarra">
+        <img
+          class="logobarra"
+          src="../../../../imagenes/logo-eva.png"
+          alt="logo-eva"
+        />
+        <a href="./citasempleado.html">
+          <h1 class="negrilla">Gestionar Citas</h1>
+        </a>
+        <a href="../inventario/inventario.html">
+          <h1>Inventario</h1>
+        </a>
+        <a href="../ventas/registro_venta.html">
+          <h1>Ventas</h1>
+          <br /><br /><br />
+        </a>
+        <a href="../../../../index.html">
+          <h1>Cerrar sesión</h1>
+        </a>
+        <div class="barra"></div>
+      </div>
+      <div id="fecha-div"></div>
+
+      <div class="tabla">
+        <table class="la_tabla">
+          <thead>
+          <tr>
+            <th>TIPO</th>
+            <th>DOCTOR</th>
+            <th>HORA</th>
+            <th>OPCION</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr th:each="cita: ${citas}">
+            <td th:text="${cita.tipo}"></td>
+            <td th:text="${cita.doctor}"></td>
+            <td th:text="{cita.hora}"></td>
+            <td class="action-buttons">
+              <button
+                      class="botoncitas"
+                      onclick="mostrarVentanaEmergenteEPS()"
+              >
+                RESERVAR
+              </button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div id="ventana-eps">
+        <div id="textoemergente" class="negrilla">
+          Responda la siguiente pregunta:<br />
+          ¿Pertenece a una EPS?
+        </div>
+
+        <img
+                class="logoX"
+                src="../../../../imagenes/LogoX.png"
+                onclick="ocultarVentanaEmergenteEPS()"
+        /><img />
+        <div class="divseleccioneps">
+          <form action="#" method="POST">
+            <label for="seleccionepsSI">
+              <input type="radio" name="opcion" value="si" id="selectsi" required />
+              <span>Sí</span>
+            </label>
+            <label for="seleccionepsNO">
+              <input type="radio" name="opcion" value="no"  id="selectno"required />
+              <span>No</span>
+            </label>
+            <button class="botoneps" type="submit">RESERVAR</button>
+          </form>
+        </div>
+        <div id="fondonegro"></div>
+      </div>
+    </section>
+  </body>
+</html>
